@@ -1,114 +1,57 @@
-<div align="center">
+<img src="assets/header.svg" alt="BenCodeX. I build things that guard, help and teach." width="100%" />
 
-<img src="assets/header.svg" alt="BenCodeX — security tooling, AI teammates, automation" width="100%" />
+I write software on a Mac, and almost all of it runs locally: no account, no server, nothing that phones home. Most of the repositories are private while I work on them, so this page is the tour.
 
-<br/>
+## Things that guard
 
-![JavaScript](https://img.shields.io/badge/JavaScript-20232a?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![TypeScript](https://img.shields.io/badge/TypeScript-20232a?style=for-the-badge&logo=typescript&logoColor=3178C6)
-![Node.js](https://img.shields.io/badge/Node.js-20232a?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E)
-![Python](https://img.shields.io/badge/Python-20232a?style=for-the-badge&logo=python&logoColor=3776AB)
-![Java](https://img.shields.io/badge/Java-20232a?style=for-the-badge&logo=openjdk&logoColor=ED8B00)
-![Swift](https://img.shields.io/badge/Swift-20232a?style=for-the-badge&logo=swift&logoColor=F05138)
-![Shell](https://img.shields.io/badge/Shell-20232a?style=for-the-badge&logo=gnubash&logoColor=4EAA25)
+**Mac Hardening Suite.** Three scripts that belong together. The first applies the hardening step by step, the second checks every point without changing anything, the third rolls it all back.
 
-<br/><br/>
+**DNS Filter.** A local, encrypted DNS filter that blocks 2.4 million ad, tracker and malware domains.
 
-| 📦 16 | 🧑‍💻 7 | 🧭 5 |
-| :---: | :---: | :---: |
-| projects built | languages used | areas: security · AI bots · learning · business · Mac tools |
+**Schutzwache.** German for "guard post". It notices when a security service stops, starts it again and tells me.
 
-</div>
+**Tracker Blocklist.** Builds a blocklist of about 305,000 tracker domains, in levels you can choose.
 
-## 🛡️ Safety, security & protection
+**Netz-Check.** Measures how well protected and how fast an internet connection is, and writes the result as a report you can open in the browser.
 
-Protection that is checked, can be rolled back and watches itself.
+The rule behind all of them: check before and after, and never change something I cannot undo.
 
-<div align="center">
+## Paul
 
-| 🌐 2.4 M | 🚫 ~305,000 | 🔁 3 |
-| :---: | :---: | :---: |
-| domains blocked by the DNS filter | tracker domains on the blocklist | scripts that belong together: apply · audit · roll back |
+Paul is an AI teammate for Minecraft. He joins your own world, talks out loud, walks with you and keeps a separate memory for every world, so he never mixes up places.
 
-</div>
+His first answers took thirteen seconds. Now they take two to four. He knows 76 world guides and runs on three Minecraft versions.
 
-| Project | What it does |
-| --- | --- |
-| 🔐 **Mac Hardening Suite** | Three scripts that belong together: one applies the hardening step by step, one audits every point read-only (OK or missing), one rolls changes back |
-| 🧱 **DNS Filter** | A local, encrypted DNS filter for 2.4 million blocked domains — ads, trackers and malware — with its own guard |
-| 👁️ **Schutzwache** | A watchdog for security services: notices when one stops, restarts it and reports |
-| 🚫 **Tracker Blocklist** | Builds the largest tracker, ad and malware blocklist the system can handle, in selectable levels |
-| 📶 **Netz-Check** | Measures the protection and speed of an internet connection and writes an HTML report |
-| 🤖 **AI safety in Paul** | The AI teammate cannot run code, and may only use chat commands from an allow list — destructive ones are blocked |
+He is also the project where I learned the most. A kick that kept throwing him out of the game only made sense after I wrote my own server probe to watch his movement. A broken mod got fixed by patching its bytecode.
 
-**Principles:** least privilege · rollback paths · audit before and after · no secrets in repositories
+Paul cannot run code on your machine, and the only chat commands he may use are on an allow list. He is built on [Mindcraft](https://github.com/mindcraft-bots/mindcraft), [Mineflayer](https://github.com/PrismarineJS/mineflayer) and [ViaProxy](https://github.com/ViaVersion/ViaProxy).
 
-## 🚀 Flagship: Paul — the Minecraft AI buddy
+## Things that teach
 
-An AI teammate that joins your own world, talks out loud, walks with you and remembers every world separately.
+**E1-Prüfungstrainer.** A learning system for a school entrance exam in German, English and maths. Everything stays in the browser.
 
-<div align="center">
+**Exam Trainer.** The same idea in English for maths and science, written in TypeScript with its own test suite.
 
-| ⚡ 1.9–3.8 s | 🗺️ 76 | 🎮 3 | 🧪 0 kicks | 🧩 5 |
-| :---: | :---: | :---: | :---: | :---: |
-| per answer, down from 13 s | world guides | Minecraft versions (1.21 · 1.21.11 · 26.3) | in the final end-to-end test | languages in one codebase |
+**Mathe-Trainer.** A maths trainer in a single file. Open it in any browser, online or not.
 
-</div>
+## Everything else
 
-- 🗣️ **Voice and personality** — speaks with a system voice, two switchable characters
-- 🧠 **Memory per world** — never mixes up places between worlds
-- 🤖 **Own robot skin** — generated by script, shipped as a resource pack
-- 🔧 **Deep fixes, not workarounds** — found the cause of a movement kick with a custom server probe; repaired a broken mod by patching its bytecode
-- 🔒 **Safe by default** — code execution off, chat commands only from an allow list
+**Auftragsmaschine.** For people who freelance alone: it finds local businesses, checks their websites for flaws it can prove, and prepares the analysis, a call guide and a letter ready to print.
 
-## 🎓 Learning tools
+**Verschenk-Radar.** Watches listings for free items, points out the ones worth picking up and drafts a message. A person always sends it.
 
-| Project | What it does |
-| --- | --- |
-| 📚 **E1-Prüfungstrainer** | A complete local learning system for a school entrance exam in German, English and maths — no account, no server, all data stays in the browser |
-| 🧪 **Exam Trainer (Maths & Science)** | Practice system in English for an international school entrance test, built with TypeScript and Vite, with its own test suite |
-| ➗ **Mathe-Trainer** | A single-file maths trainer that runs in any browser, fully offline |
+**Vorssaint-Stumm.** A small Swift tool that truly mutes the speakers at volume zero. Without it they kept playing at −63.5 dB.
 
-## 📈 Business & automation
+**Screenshot Sorter.** Files screenshots into folders by topic, year and month, and keeps a catalogue you can search.
 
-| Project | What it does |
-| --- | --- |
-| 🏭 **Auftragsmaschine 2.0** | Local system for solo freelancers: finds local businesses, audits their websites for provable flaws, and produces the analysis document, call guide and print-ready letter — plus the pipeline maths behind a revenue goal |
-| 📡 **Verschenk-Radar** | Watches free-item listings, flags things worth picking up and prepares message drafts — a human always sends them |
+**Minecraft Festung.** Fortresses built by datapack: a 41×41 base that survives TNT, and a mountain castle on a 192×192 platform.
 
-## 🍏 Mac tools
+**Enchant-Bot.** Joins as its own player and enchants your gear when you ask in chat.
 
-| Project | What it does |
-| --- | --- |
-| 🔇 **Vorssaint-Stumm** | A small Swift tool on CoreAudio that truly mutes the speakers when the volume reaches zero — fixes a gap where they kept playing at −63.5 dB |
-| 🗂️ **Screenshot Sorter** | Sorts screenshots into topic folders by year and month and keeps a searchable catalogue |
+**Gearkit.** Generates a datapack that hands out 29 shulker boxes of fully enchanted gear.
 
-## ⛏️ More Minecraft engineering
+**Unstable Maps Lab.** Tools to analyse and test Minecraft maps across game versions.
 
-| Project | What it does |
-| --- | --- |
-| 🏰 **Minecraft Festung** | Fortresses built by datapack: a 41×41 TNT-proof base with a lock, and a mountain castle on a 192×192 platform — every part checked block by block |
-| ✨ **Enchant-Bot** | A Mineflayer bot that joins as its own player and enchants your gear on request in chat |
-| 🎒 **Gearkit** | A generator for a datapack that hands out 29 shulker boxes of fully enchanted gear, for two game-version ranges |
-| 🗺️ **Unstable Maps Lab** | Tooling to analyse and test Minecraft maps across game versions, with its own test server and client |
+## How I work
 
-<sub>Most repositories are private while they are in development.</sub>
-
-## 🧭 How I work
-
-- ✅ **Tested, not just demoed** — a real game client runs the full path on every change
-- 🛡️ **Safe by default** — risky features stay off until I switch them on
-- 📝 **Written down** — causes of bugs, decisions and open points are documented
-- 🤝 **Honest credit** — built on [Mindcraft](https://github.com/mindcraft-bots/mindcraft), [Mineflayer](https://github.com/PrismarineJS/mineflayer) and [ViaProxy](https://github.com/ViaVersion/ViaProxy)
-
-## 🔭 Right now
-
-- Faster answers for Paul
-- More world guides and smarter reactions
-- Support for the newest Minecraft versions
-
-<div align="center">
-
-<img src="assets/footer.svg" alt="" width="100%" />
-
-</div>
+A real game client plays through the whole path after every change, because a demo that works once proves nothing. Risky features stay off until I switch them on. When I find the cause of a bug I write it down, along with what I decided and what is still open.
