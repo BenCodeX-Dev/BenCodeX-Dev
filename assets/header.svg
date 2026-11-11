@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="BenCodeX — security tooling, AI teammates, automation">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071318"/><stop offset="0.55" stop-color="#10262e"/><stop offset="1" stop-color="#1d4350"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5ee7df"/><stop offset="1" stop-color="#2c9fb8"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5ee7df" stop-opacity="0"/><stop offset="0.5" stop-color="#5ee7df" stop-opacity="0.16"/><stop offset="1" stop-color="#5ee7df" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <clipPath id="r"><rect width="1200" height="320" rx="18"/></clipPath>
+    <style>
+      .t{font:700 76px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#fff;letter-spacing:-1.5px}
+      .m{font:500 21px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#8fd9e3}
+      .s{font:600 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#6fb9c6;letter-spacing:2.5px}
+      .shield{stroke-dasharray:1900;stroke-dashoffset:1900;animation:draw 2.4s cubic-bezier(.65,0,.35,1) .2s forwards}
+      .br{opacity:0;animation:in .7s ease-out 1.9s forwards}
+      .title{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) .5s forwards}
+      .rule{transform-origin:330px 0;transform:scaleX(0);animation:grow .9s cubic-bezier(.2,.7,.2,1) 1.1s forwards}
+      .l{opacity:0}
+      .l1{animation:cycle 12s ease-in-out 1.6s infinite}
+      .l2{animation:cycle 12s ease-in-out 5.6s infinite}
+      .l3{animation:cycle 12s ease-in-out 9.6s infinite}
+      .sweep{animation:sweep 7s linear infinite}
+      .dot{animation:pulse 2.4s ease-in-out infinite}
+      .ring{transform-origin:333px 262px;animation:ring 2.4s ease-out infinite}
+      .status{opacity:0;animation:in .8s ease-out 2.2s forwards}
+      @keyframes draw{to{stroke-dashoffset:0}}
+      @keyframes in{to{opacity:1}}
+      @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+      @keyframes grow{to{transform:scaleX(1)}}
+      @keyframes cycle{0%{opacity:0;transform:translateY(8px)}4%,29%{opacity:1;transform:none}33.3%,100%{opacity:0;transform:translateY(-8px)}}
+      @keyframes sweep{from{transform:translateX(-420px)}to{transform:translateX(1200px)}}
+      @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+      @keyframes ring{from{transform:scale(1);opacity:.7}to{transform:scale(3.2);opacity:0}}
+      @media (prefers-reduced-motion:reduce){
+        *{animation:none!important}
+        .shield{stroke-dashoffset:0}.br,.title,.status,.l1{opacity:1}.rule{transform:none}.sweep,.ring{display:none}
+      }
+    </style>
+  </defs>
+  <g clip-path="url(#r)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <rect class="sweep" width="420" height="320" fill="url(#scan)"/>
+    <g transform="translate(70 40) scale(0.3)">
+      <path class="shield" d="M400 130 L620 210 V400 C620 540 525 635 400 680 C275 635 180 540 180 400 V210 Z" fill="#071318" fill-opacity="0.6" stroke="url(#ac)" stroke-width="24" stroke-linejoin="round"/>
+      <g class="br" fill="none" stroke-width="32" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M335 330 L265 400 L335 470" stroke="url(#ac)"/>
+        <path d="M465 330 L535 400 L465 470" stroke="url(#ac)"/>
+        <path d="M425 300 L375 500" stroke="#ffffff"/>
+      </g>
+    </g>
+    <g class="title"><text class="t" x="326" y="138">BenCodeX</text></g>
+    <rect class="rule" x="330" y="164" width="96" height="4" rx="2" fill="url(#ac)"/>
+    <g>
+      <text class="m l l1" x="330" y="212">Security tooling that checks itself.</text>
+      <text class="m l l2" x="330" y="212">AI teammates, tested end to end.</text>
+      <text class="m l l3" x="330" y="212">Safe by default. Documented. Honest credit.</text>
+    </g>
+    <g class="status">
+      <circle class="ring" cx="333" cy="262" r="5" fill="none" stroke="#5ee7df" stroke-width="1.5"/>
+      <circle class="dot" cx="333" cy="262" r="5" fill="#5ee7df"/>
+      <text class="s" x="350" y="267">SECURITY · AI BOTS · LEARNING · AUTOMATION</text>
+    </g>
+  </g>
+</svg>
