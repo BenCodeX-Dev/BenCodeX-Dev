@@ -1,71 +1,347 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="BenCodeX — security tooling, AI teammates, automation">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#071318"/><stop offset="0.55" stop-color="#10262e"/><stop offset="1" stop-color="#1d4350"/>
-    </linearGradient>
-    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#5ee7df"/><stop offset="1" stop-color="#2c9fb8"/>
-    </linearGradient>
-    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5ee7df" stop-opacity="0"/><stop offset="0.5" stop-color="#5ee7df" stop-opacity="0.16"/><stop offset="1" stop-color="#5ee7df" stop-opacity="0"/>
-    </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
-    </pattern>
-    <clipPath id="r"><rect width="1200" height="320" rx="18"/></clipPath>
-    <style>
-      .t{font:700 76px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#fff;letter-spacing:-1.5px}
-      .m{font:500 21px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#8fd9e3}
-      .s{font:600 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#6fb9c6;letter-spacing:2.5px}
-      .shield{stroke-dasharray:1900;stroke-dashoffset:1900;animation:draw 2.4s cubic-bezier(.65,0,.35,1) .2s forwards}
-      .br{opacity:0;animation:in .7s ease-out 1.9s forwards}
-      .title{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) .5s forwards}
-      .rule{transform-origin:330px 0;transform:scaleX(0);animation:grow .9s cubic-bezier(.2,.7,.2,1) 1.1s forwards}
-      .l{opacity:0}
-      .l1{animation:cycle 12s ease-in-out 1.6s infinite}
-      .l2{animation:cycle 12s ease-in-out 5.6s infinite}
-      .l3{animation:cycle 12s ease-in-out 9.6s infinite}
-      .sweep{animation:sweep 7s linear infinite}
-      .dot{animation:pulse 2.4s ease-in-out infinite}
-      .ring{transform-origin:333px 262px;animation:ring 2.4s ease-out infinite}
-      .status{opacity:0;animation:in .8s ease-out 2.2s forwards}
-      @keyframes draw{to{stroke-dashoffset:0}}
-      @keyframes in{to{opacity:1}}
-      @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-      @keyframes grow{to{transform:scaleX(1)}}
-      @keyframes cycle{0%{opacity:0;transform:translateY(8px)}4%,29%{opacity:1;transform:none}33.3%,100%{opacity:0;transform:translateY(-8px)}}
-      @keyframes sweep{from{transform:translateX(-420px)}to{transform:translateX(1200px)}}
-      @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
-      @keyframes ring{from{transform:scale(1);opacity:.7}to{transform:scale(3.2);opacity:0}}
-      @media (prefers-reduced-motion:reduce){
-        *{animation:none!important}
-        .shield{stroke-dashoffset:0}.br,.title,.status,.l1{opacity:1}.rule{transform:none}.sweep,.ring{display:none}
-      }
-    </style>
-  </defs>
-  <g clip-path="url(#r)">
-    <rect width="1200" height="320" fill="url(#bg)"/>
-    <rect width="1200" height="320" fill="url(#grid)"/>
-    <rect class="sweep" width="420" height="320" fill="url(#scan)"/>
-    <g transform="translate(70 40) scale(0.3)">
-      <path class="shield" d="M400 130 L620 210 V400 C620 540 525 635 400 680 C275 635 180 540 180 400 V210 Z" fill="#071318" fill-opacity="0.6" stroke="url(#ac)" stroke-width="24" stroke-linejoin="round"/>
-      <g class="br" fill="none" stroke-width="32" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M335 330 L265 400 L335 470" stroke="url(#ac)"/>
-        <path d="M465 330 L535 400 L465 470" stroke="url(#ac)"/>
-        <path d="M425 300 L375 500" stroke="#ffffff"/>
-      </g>
-    </g>
-    <g class="title"><text class="t" x="326" y="138">BenCodeX</text></g>
-    <rect class="rule" x="330" y="164" width="96" height="4" rx="2" fill="url(#ac)"/>
-    <g>
-      <text class="m l l1" x="330" y="212">Security tooling that checks itself.</text>
-      <text class="m l l2" x="330" y="212">AI teammates, tested end to end.</text>
-      <text class="m l l3" x="330" y="212">Safe by default. Documented. Honest credit.</text>
-    </g>
-    <g class="status">
-      <circle class="ring" cx="333" cy="262" r="5" fill="none" stroke="#5ee7df" stroke-width="1.5"/>
-      <circle class="dot" cx="333" cy="262" r="5" fill="#5ee7df"/>
-      <text class="s" x="350" y="267">SECURITY · AI BOTS · LEARNING · AUTOMATION</text>
-    </g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="BenCodeX. I build things that guard, help and teach.">
+<style>
+.tx{font:600 27px 'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;fill:#F3EBCB}
+.tx2{font:400 19px 'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;fill:#B9C2E0}
+
+.b{animation:drop .55s cubic-bezier(.3,1.3,.5,1) both}
+.c{animation:pop .4s cubic-bezier(.3,1.4,.5,1) both}
+.say{animation:fade .9s ease-out 1.5s both}
+.torch{animation:flick 1.7s steps(4,end) 2.4s infinite}
+.paul{animation:walk 11s linear 2.6s infinite alternate both}
+.paulin{animation:fade .6s ease-out 2.2s both}
+@keyframes drop{from{opacity:0;transform:translateY(-34px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes flick{0%{opacity:1}35%{opacity:.72}60%{opacity:.95}100%{opacity:.8}}
+@keyframes walk{from{transform:translate(0,0)}to{transform:translate(120px,60px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect width="1200" height="420" rx="6" fill="#2A3562"/>
+<rect x="1073" y="27" width="4" height="4" fill="#F3EBCB" opacity="0.27"/>
+<rect x="1154" y="39" width="4" height="4" fill="#F3EBCB" opacity="0.65"/>
+<rect x="285" y="33" width="3" height="3" fill="#F3EBCB" opacity="0.38"/>
+<rect x="159" y="87" width="3" height="3" fill="#F3EBCB" opacity="0.64"/>
+<rect x="236" y="95" width="4" height="4" fill="#F3EBCB" opacity="0.62"/>
+<rect x="191" y="114" width="2" height="2" fill="#F3EBCB" opacity="0.28"/>
+<rect x="659" y="79" width="3" height="3" fill="#F3EBCB" opacity="0.40"/>
+<rect x="353" y="14" width="4" height="4" fill="#F3EBCB" opacity="0.50"/>
+<rect x="654" y="43" width="4" height="4" fill="#F3EBCB" opacity="0.38"/>
+<rect x="519" y="97" width="2" height="2" fill="#F3EBCB" opacity="0.32"/>
+<rect x="902" y="100" width="2" height="2" fill="#F3EBCB" opacity="0.36"/>
+<rect x="956" y="112" width="3" height="3" fill="#F3EBCB" opacity="0.52"/>
+<rect x="272" y="118" width="2" height="2" fill="#F3EBCB" opacity="0.52"/>
+<rect x="119" y="36" width="3" height="3" fill="#F3EBCB" opacity="0.38"/>
+<rect x="699" y="40" width="3" height="3" fill="#F3EBCB" opacity="0.68"/>
+<rect x="173" y="42" width="4" height="4" fill="#F3EBCB" opacity="0.45"/>
+<rect x="1104" y="84" width="3" height="3" fill="#F3EBCB" opacity="0.39"/>
+<rect x="1059" y="37" width="3" height="3" fill="#F3EBCB" opacity="0.55"/>
+<rect x="146" y="105" width="4" height="4" fill="#F3EBCB" opacity="0.26"/>
+<rect x="200" y="77" width="4" height="4" fill="#F3EBCB" opacity="0.69"/>
+<rect x="272" y="67" width="3" height="3" fill="#F3EBCB" opacity="0.74"/>
+<rect x="1118" y="150" width="2" height="2" fill="#F3EBCB" opacity="0.43"/>
+<rect x="231" y="65" width="3" height="3" fill="#F3EBCB" opacity="0.45"/>
+<rect x="857" y="34" width="4" height="4" fill="#F3EBCB" opacity="0.29"/>
+<rect x="1082" y="153" width="4" height="4" fill="#F3EBCB" opacity="0.33"/>
+<rect x="1149" y="94" width="3" height="3" fill="#F3EBCB" opacity="0.71"/>
+<rect x="1096" y="40" width="40" height="40" fill="#F3EBCB"/><rect x="1104" y="50" width="10" height="10" fill="#E0D6AE"/><rect x="1120" y="62" width="8" height="8" fill="#E0D6AE"/>
+<polygon points="660.0,260.0 900.0,380.0 900.0,392.0 660.0,272.0" fill="#4E7A40"/><polygon points="1140.0,260.0 900.0,380.0 900.0,392.0 1140.0,272.0" fill="#3F6535"/><polygon points="900.0,140.0 1140.0,260.0 900.0,380.0 660.0,260.0" fill="#6FA05A"/>
+<polygon points="900.0,190.0 1040.0,260.0 900.0,330.0 760.0,260.0" fill="#7C8597"/>
+<polygon points="800.0,300.0 820.0,310.0 790.0,325.0 770.0,315.0" fill="#B79F6D"/>
+<g class="b" style="animation-delay:0.00s"><polygon points="900.0,150.0 920.0,160.0 900.0,170.0 880.0,160.0" fill="#9AA2B4"/><polygon points="880.0,160.0 900.0,170.0 900.0,190.0 880.0,180.0" fill="#727A90"/><polygon points="920.0,160.0 900.0,170.0 900.0,190.0 920.0,180.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.13s"><polygon points="900.0,130.0 920.0,140.0 900.0,150.0 880.0,140.0" fill="#8C94A6"/><polygon points="880.0,140.0 900.0,150.0 900.0,170.0 880.0,160.0" fill="#687087"/><polygon points="920.0,140.0 900.0,150.0 900.0,170.0 920.0,160.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.26s"><polygon points="900.0,110.0 920.0,120.0 900.0,130.0 880.0,120.0" fill="#9AA2B4"/><polygon points="880.0,120.0 900.0,130.0 900.0,150.0 880.0,140.0" fill="#727A90"/><polygon points="920.0,120.0 900.0,130.0 900.0,150.0 920.0,140.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.39s"><polygon points="900.0,90.0 920.0,100.0 900.0,110.0 880.0,100.0" fill="#9AA2B4"/><polygon points="880.0,100.0 900.0,110.0 900.0,130.0 880.0,120.0" fill="#727A90"/><polygon points="920.0,100.0 900.0,110.0 900.0,130.0 920.0,120.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.52s"><polygon points="900.0,70.0 920.0,80.0 900.0,90.0 880.0,80.0" fill="#9AA2B4"/><polygon points="880.0,80.0 900.0,90.0 900.0,110.0 880.0,100.0" fill="#727A90"/><polygon points="920.0,80.0 900.0,90.0 900.0,110.0 920.0,100.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.65s"><g class="torch"><polygon points="900.0,66.0 908.0,70.0 900.0,74.0 892.0,70.0" fill="#FFE08A"/><polygon points="892.0,70.0 900.0,74.0 900.0,84.0 892.0,80.0" fill="#F5B93A"/><polygon points="908.0,70.0 900.0,74.0 900.0,84.0 908.0,80.0" fill="#D9982A"/></g></g>
+<g class="b" style="animation-delay:0.02s"><polygon points="880.0,160.0 900.0,170.0 880.0,180.0 860.0,170.0" fill="#9AA2B4"/><polygon points="860.0,170.0 880.0,180.0 880.0,200.0 860.0,190.0" fill="#727A90"/><polygon points="900.0,170.0 880.0,180.0 880.0,200.0 900.0,190.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.02s"><polygon points="920.0,160.0 940.0,170.0 920.0,180.0 900.0,170.0" fill="#A5ADBE"/><polygon points="900.0,170.0 920.0,180.0 920.0,200.0 900.0,190.0" fill="#7A8298"/><polygon points="940.0,170.0 920.0,180.0 920.0,200.0 940.0,190.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.15s"><polygon points="880.0,140.0 900.0,150.0 880.0,160.0 860.0,150.0" fill="#8C94A6"/><polygon points="860.0,150.0 880.0,160.0 880.0,180.0 860.0,170.0" fill="#687087"/><polygon points="900.0,150.0 880.0,160.0 880.0,180.0 900.0,170.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.15s"><polygon points="920.0,140.0 940.0,150.0 920.0,160.0 900.0,150.0" fill="#A5ADBE"/><polygon points="900.0,150.0 920.0,160.0 920.0,180.0 900.0,170.0" fill="#7A8298"/><polygon points="940.0,150.0 920.0,160.0 920.0,180.0 940.0,170.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.28s"><polygon points="880.0,120.0 900.0,130.0 880.0,140.0 860.0,130.0" fill="#A5ADBE"/><polygon points="860.0,130.0 880.0,140.0 880.0,160.0 860.0,150.0" fill="#7A8298"/><polygon points="900.0,130.0 880.0,140.0 880.0,160.0 900.0,150.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.28s"><polygon points="920.0,120.0 940.0,130.0 920.0,140.0 900.0,130.0" fill="#9AA2B4"/><polygon points="900.0,130.0 920.0,140.0 920.0,160.0 900.0,150.0" fill="#727A90"/><polygon points="940.0,130.0 920.0,140.0 920.0,160.0 940.0,150.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.04s"><polygon points="860.0,170.0 880.0,180.0 860.0,190.0 840.0,180.0" fill="#8C94A6"/><polygon points="840.0,180.0 860.0,190.0 860.0,210.0 840.0,200.0" fill="#687087"/><polygon points="880.0,180.0 860.0,190.0 860.0,210.0 880.0,200.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.04s"><polygon points="940.0,170.0 960.0,180.0 940.0,190.0 920.0,180.0" fill="#A5ADBE"/><polygon points="920.0,180.0 940.0,190.0 940.0,210.0 920.0,200.0" fill="#7A8298"/><polygon points="960.0,180.0 940.0,190.0 940.0,210.0 960.0,200.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.17s"><polygon points="860.0,150.0 880.0,160.0 860.0,170.0 840.0,160.0" fill="#8C94A6"/><polygon points="840.0,160.0 860.0,170.0 860.0,190.0 840.0,180.0" fill="#687087"/><polygon points="880.0,160.0 860.0,170.0 860.0,190.0 880.0,180.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.17s"><polygon points="940.0,150.0 960.0,160.0 940.0,170.0 920.0,160.0" fill="#8C94A6"/><polygon points="920.0,160.0 940.0,170.0 940.0,190.0 920.0,180.0" fill="#687087"/><polygon points="960.0,160.0 940.0,170.0 940.0,190.0 960.0,180.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.30s"><polygon points="860.0,130.0 880.0,140.0 860.0,150.0 840.0,140.0" fill="#9AA2B4"/><polygon points="840.0,140.0 860.0,150.0 860.0,170.0 840.0,160.0" fill="#727A90"/><polygon points="880.0,140.0 860.0,150.0 860.0,170.0 880.0,160.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.30s"><polygon points="940.0,130.0 960.0,140.0 940.0,150.0 920.0,140.0" fill="#9AA2B4"/><polygon points="920.0,140.0 940.0,150.0 940.0,170.0 920.0,160.0" fill="#727A90"/><polygon points="960.0,140.0 940.0,150.0 940.0,170.0 960.0,160.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.43s"><polygon points="860.0,110.0 880.0,120.0 860.0,130.0 840.0,120.0" fill="#8C94A6"/><polygon points="840.0,120.0 860.0,130.0 860.0,150.0 840.0,140.0" fill="#687087"/><polygon points="880.0,120.0 860.0,130.0 860.0,150.0 880.0,140.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.43s"><polygon points="940.0,110.0 960.0,120.0 940.0,130.0 920.0,120.0" fill="#A5ADBE"/><polygon points="920.0,120.0 940.0,130.0 940.0,150.0 920.0,140.0" fill="#7A8298"/><polygon points="960.0,120.0 940.0,130.0 940.0,150.0 960.0,140.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.07s"><polygon points="840.0,180.0 860.0,190.0 840.0,200.0 820.0,190.0" fill="#8C94A6"/><polygon points="820.0,190.0 840.0,200.0 840.0,220.0 820.0,210.0" fill="#687087"/><polygon points="860.0,190.0 840.0,200.0 840.0,220.0 860.0,210.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.07s"><polygon points="960.0,180.0 980.0,190.0 960.0,200.0 940.0,190.0" fill="#A5ADBE"/><polygon points="940.0,190.0 960.0,200.0 960.0,220.0 940.0,210.0" fill="#7A8298"/><polygon points="980.0,190.0 960.0,200.0 960.0,220.0 980.0,210.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.20s"><polygon points="840.0,160.0 860.0,170.0 840.0,180.0 820.0,170.0" fill="#8C94A6"/><polygon points="820.0,170.0 840.0,180.0 840.0,200.0 820.0,190.0" fill="#687087"/><polygon points="860.0,170.0 840.0,180.0 840.0,200.0 860.0,190.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.20s"><polygon points="960.0,160.0 980.0,170.0 960.0,180.0 940.0,170.0" fill="#8C94A6"/><polygon points="940.0,170.0 960.0,180.0 960.0,200.0 940.0,190.0" fill="#687087"/><polygon points="980.0,170.0 960.0,180.0 960.0,200.0 980.0,190.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.33s"><polygon points="840.0,140.0 860.0,150.0 840.0,160.0 820.0,150.0" fill="#A5ADBE"/><polygon points="820.0,150.0 840.0,160.0 840.0,180.0 820.0,170.0" fill="#7A8298"/><polygon points="860.0,150.0 840.0,160.0 840.0,180.0 860.0,170.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.33s"><polygon points="960.0,140.0 980.0,150.0 960.0,160.0 940.0,150.0" fill="#9AA2B4"/><polygon points="940.0,150.0 960.0,160.0 960.0,180.0 940.0,170.0" fill="#727A90"/><polygon points="980.0,150.0 960.0,160.0 960.0,180.0 980.0,170.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.09s"><polygon points="820.0,190.0 840.0,200.0 820.0,210.0 800.0,200.0" fill="#A5ADBE"/><polygon points="800.0,200.0 820.0,210.0 820.0,230.0 800.0,220.0" fill="#7A8298"/><polygon points="840.0,200.0 820.0,210.0 820.0,230.0 840.0,220.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.09s"><polygon points="980.0,190.0 1000.0,200.0 980.0,210.0 960.0,200.0" fill="#A5ADBE"/><polygon points="960.0,200.0 980.0,210.0 980.0,230.0 960.0,220.0" fill="#7A8298"/><polygon points="1000.0,200.0 980.0,210.0 980.0,230.0 1000.0,220.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.22s"><polygon points="820.0,170.0 840.0,180.0 820.0,190.0 800.0,180.0" fill="#8C94A6"/><polygon points="800.0,180.0 820.0,190.0 820.0,210.0 800.0,200.0" fill="#687087"/><polygon points="840.0,180.0 820.0,190.0 820.0,210.0 840.0,200.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.22s"><polygon points="980.0,170.0 1000.0,180.0 980.0,190.0 960.0,180.0" fill="#A5ADBE"/><polygon points="960.0,180.0 980.0,190.0 980.0,210.0 960.0,200.0" fill="#7A8298"/><polygon points="1000.0,180.0 980.0,190.0 980.0,210.0 1000.0,200.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.35s"><polygon points="820.0,150.0 840.0,160.0 820.0,170.0 800.0,160.0" fill="#8C94A6"/><polygon points="800.0,160.0 820.0,170.0 820.0,190.0 800.0,180.0" fill="#687087"/><polygon points="840.0,160.0 820.0,170.0 820.0,190.0 840.0,180.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.35s"><polygon points="980.0,150.0 1000.0,160.0 980.0,170.0 960.0,160.0" fill="#9AA2B4"/><polygon points="960.0,160.0 980.0,170.0 980.0,190.0 960.0,180.0" fill="#727A90"/><polygon points="1000.0,160.0 980.0,170.0 980.0,190.0 1000.0,180.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.48s"><polygon points="820.0,130.0 840.0,140.0 820.0,150.0 800.0,140.0" fill="#A5ADBE"/><polygon points="800.0,140.0 820.0,150.0 820.0,170.0 800.0,160.0" fill="#7A8298"/><polygon points="840.0,140.0 820.0,150.0 820.0,170.0 840.0,160.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.48s"><polygon points="980.0,130.0 1000.0,140.0 980.0,150.0 960.0,140.0" fill="#8C94A6"/><polygon points="960.0,140.0 980.0,150.0 980.0,170.0 960.0,160.0" fill="#687087"/><polygon points="1000.0,140.0 980.0,150.0 980.0,170.0 1000.0,160.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.11s"><polygon points="800.0,200.0 820.0,210.0 800.0,220.0 780.0,210.0" fill="#A5ADBE"/><polygon points="780.0,210.0 800.0,220.0 800.0,240.0 780.0,230.0" fill="#7A8298"/><polygon points="820.0,210.0 800.0,220.0 800.0,240.0 820.0,230.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.11s"><polygon points="1000.0,200.0 1020.0,210.0 1000.0,220.0 980.0,210.0" fill="#A5ADBE"/><polygon points="980.0,210.0 1000.0,220.0 1000.0,240.0 980.0,230.0" fill="#7A8298"/><polygon points="1020.0,210.0 1000.0,220.0 1000.0,240.0 1020.0,230.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.24s"><polygon points="800.0,180.0 820.0,190.0 800.0,200.0 780.0,190.0" fill="#8C94A6"/><polygon points="780.0,190.0 800.0,200.0 800.0,220.0 780.0,210.0" fill="#687087"/><polygon points="820.0,190.0 800.0,200.0 800.0,220.0 820.0,210.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.24s"><polygon points="1000.0,180.0 1020.0,190.0 1000.0,200.0 980.0,190.0" fill="#8C94A6"/><polygon points="980.0,190.0 1000.0,200.0 1000.0,220.0 980.0,210.0" fill="#687087"/><polygon points="1020.0,190.0 1000.0,200.0 1000.0,220.0 1020.0,210.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.37s"><polygon points="800.0,160.0 820.0,170.0 800.0,180.0 780.0,170.0" fill="#8C94A6"/><polygon points="780.0,170.0 800.0,180.0 800.0,200.0 780.0,190.0" fill="#687087"/><polygon points="820.0,170.0 800.0,180.0 800.0,200.0 820.0,190.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.37s"><polygon points="1000.0,160.0 1020.0,170.0 1000.0,180.0 980.0,170.0" fill="#8C94A6"/><polygon points="980.0,170.0 1000.0,180.0 1000.0,200.0 980.0,190.0" fill="#687087"/><polygon points="1020.0,170.0 1000.0,180.0 1000.0,200.0 1020.0,190.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.13s"><polygon points="780.0,210.0 800.0,220.0 780.0,230.0 760.0,220.0" fill="#A5ADBE"/><polygon points="760.0,220.0 780.0,230.0 780.0,250.0 760.0,240.0" fill="#7A8298"/><polygon points="800.0,220.0 780.0,230.0 780.0,250.0 800.0,240.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.13s"><polygon points="900.0,210.0 920.0,220.0 900.0,230.0 880.0,220.0" fill="#9AA2B4"/><polygon points="880.0,220.0 900.0,230.0 900.0,250.0 880.0,240.0" fill="#727A90"/><polygon points="920.0,220.0 900.0,230.0 900.0,250.0 920.0,240.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.13s"><polygon points="1020.0,210.0 1040.0,220.0 1020.0,230.0 1000.0,220.0" fill="#A5ADBE"/><polygon points="1000.0,220.0 1020.0,230.0 1020.0,250.0 1000.0,240.0" fill="#7A8298"/><polygon points="1040.0,220.0 1020.0,230.0 1020.0,250.0 1040.0,240.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.26s"><polygon points="780.0,190.0 800.0,200.0 780.0,210.0 760.0,200.0" fill="#9AA2B4"/><polygon points="760.0,200.0 780.0,210.0 780.0,230.0 760.0,220.0" fill="#727A90"/><polygon points="800.0,200.0 780.0,210.0 780.0,230.0 800.0,220.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.26s"><polygon points="900.0,190.0 920.0,200.0 900.0,210.0 880.0,200.0" fill="#A5ADBE"/><polygon points="880.0,200.0 900.0,210.0 900.0,230.0 880.0,220.0" fill="#7A8298"/><polygon points="920.0,200.0 900.0,210.0 900.0,230.0 920.0,220.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.26s"><polygon points="1020.0,190.0 1040.0,200.0 1020.0,210.0 1000.0,200.0" fill="#A5ADBE"/><polygon points="1000.0,200.0 1020.0,210.0 1020.0,230.0 1000.0,220.0" fill="#7A8298"/><polygon points="1040.0,200.0 1020.0,210.0 1020.0,230.0 1040.0,220.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.39s"><polygon points="780.0,170.0 800.0,180.0 780.0,190.0 760.0,180.0" fill="#9AA2B4"/><polygon points="760.0,180.0 780.0,190.0 780.0,210.0 760.0,200.0" fill="#727A90"/><polygon points="800.0,180.0 780.0,190.0 780.0,210.0 800.0,200.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.39s"><polygon points="900.0,170.0 920.0,180.0 900.0,190.0 880.0,180.0" fill="#8C94A6"/><polygon points="880.0,180.0 900.0,190.0 900.0,210.0 880.0,200.0" fill="#687087"/><polygon points="920.0,180.0 900.0,190.0 900.0,210.0 920.0,200.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.39s"><polygon points="1020.0,170.0 1040.0,180.0 1020.0,190.0 1000.0,180.0" fill="#9AA2B4"/><polygon points="1000.0,180.0 1020.0,190.0 1020.0,210.0 1000.0,200.0" fill="#727A90"/><polygon points="1040.0,180.0 1020.0,190.0 1020.0,210.0 1040.0,200.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.52s"><polygon points="780.0,150.0 800.0,160.0 780.0,170.0 760.0,160.0" fill="#A5ADBE"/><polygon points="760.0,160.0 780.0,170.0 780.0,190.0 760.0,180.0" fill="#7A8298"/><polygon points="800.0,160.0 780.0,170.0 780.0,190.0 800.0,180.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.52s"><polygon points="900.0,150.0 920.0,160.0 900.0,170.0 880.0,160.0" fill="#A5ADBE"/><polygon points="880.0,160.0 900.0,170.0 900.0,190.0 880.0,180.0" fill="#7A8298"/><polygon points="920.0,160.0 900.0,170.0 900.0,190.0 920.0,180.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.52s"><polygon points="1020.0,150.0 1040.0,160.0 1020.0,170.0 1000.0,160.0" fill="#A5ADBE"/><polygon points="1000.0,160.0 1020.0,170.0 1020.0,190.0 1000.0,180.0" fill="#7A8298"/><polygon points="1040.0,160.0 1020.0,170.0 1020.0,190.0 1040.0,180.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.65s"><polygon points="900.0,130.0 920.0,140.0 900.0,150.0 880.0,140.0" fill="#A5ADBE"/><polygon points="880.0,140.0 900.0,150.0 900.0,170.0 880.0,160.0" fill="#7A8298"/><polygon points="920.0,140.0 900.0,150.0 900.0,170.0 920.0,160.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.15s"><polygon points="760.0,220.0 780.0,230.0 760.0,240.0 740.0,230.0" fill="#9AA2B4"/><polygon points="740.0,230.0 760.0,240.0 760.0,260.0 740.0,250.0" fill="#727A90"/><polygon points="780.0,230.0 760.0,240.0 760.0,260.0 780.0,250.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.15s"><polygon points="880.0,220.0 900.0,230.0 880.0,240.0 860.0,230.0" fill="#9AA2B4"/><polygon points="860.0,230.0 880.0,240.0 880.0,260.0 860.0,250.0" fill="#727A90"/><polygon points="900.0,230.0 880.0,240.0 880.0,260.0 900.0,250.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.15s"><polygon points="920.0,220.0 940.0,230.0 920.0,240.0 900.0,230.0" fill="#A5ADBE"/><polygon points="900.0,230.0 920.0,240.0 920.0,260.0 900.0,250.0" fill="#7A8298"/><polygon points="940.0,230.0 920.0,240.0 920.0,260.0 940.0,250.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.15s"><polygon points="1040.0,220.0 1060.0,230.0 1040.0,240.0 1020.0,230.0" fill="#8C94A6"/><polygon points="1020.0,230.0 1040.0,240.0 1040.0,260.0 1020.0,250.0" fill="#687087"/><polygon points="1060.0,230.0 1040.0,240.0 1040.0,260.0 1060.0,250.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.28s"><polygon points="760.0,200.0 780.0,210.0 760.0,220.0 740.0,210.0" fill="#8C94A6"/><polygon points="740.0,210.0 760.0,220.0 760.0,240.0 740.0,230.0" fill="#687087"/><polygon points="780.0,210.0 760.0,220.0 760.0,240.0 780.0,230.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.28s"><polygon points="880.0,200.0 900.0,210.0 880.0,220.0 860.0,210.0" fill="#9AA2B4"/><polygon points="860.0,210.0 880.0,220.0 880.0,240.0 860.0,230.0" fill="#727A90"/><polygon points="900.0,210.0 880.0,220.0 880.0,240.0 900.0,230.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.28s"><polygon points="920.0,200.0 940.0,210.0 920.0,220.0 900.0,210.0" fill="#9AA2B4"/><polygon points="900.0,210.0 920.0,220.0 920.0,240.0 900.0,230.0" fill="#727A90"/><polygon points="940.0,210.0 920.0,220.0 920.0,240.0 940.0,230.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.28s"><polygon points="1040.0,200.0 1060.0,210.0 1040.0,220.0 1020.0,210.0" fill="#8C94A6"/><polygon points="1020.0,210.0 1040.0,220.0 1040.0,240.0 1020.0,230.0" fill="#687087"/><polygon points="1060.0,210.0 1040.0,220.0 1040.0,240.0 1060.0,230.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.41s"><polygon points="760.0,180.0 780.0,190.0 760.0,200.0 740.0,190.0" fill="#9AA2B4"/><polygon points="740.0,190.0 760.0,200.0 760.0,220.0 740.0,210.0" fill="#727A90"/><polygon points="780.0,190.0 760.0,200.0 760.0,220.0 780.0,210.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.41s"><polygon points="880.0,180.0 900.0,190.0 880.0,200.0 860.0,190.0" fill="#8C94A6"/><polygon points="860.0,190.0 880.0,200.0 880.0,220.0 860.0,210.0" fill="#687087"/><polygon points="900.0,190.0 880.0,200.0 880.0,220.0 900.0,210.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.41s"><polygon points="920.0,180.0 940.0,190.0 920.0,200.0 900.0,190.0" fill="#A5ADBE"/><polygon points="900.0,190.0 920.0,200.0 920.0,220.0 900.0,210.0" fill="#7A8298"/><polygon points="940.0,190.0 920.0,200.0 920.0,220.0 940.0,210.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.41s"><polygon points="1040.0,180.0 1060.0,190.0 1040.0,200.0 1020.0,190.0" fill="#A5ADBE"/><polygon points="1020.0,190.0 1040.0,200.0 1040.0,220.0 1020.0,210.0" fill="#7A8298"/><polygon points="1060.0,190.0 1040.0,200.0 1040.0,220.0 1060.0,210.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.54s"><polygon points="880.0,160.0 900.0,170.0 880.0,180.0 860.0,170.0" fill="#A5ADBE"/><polygon points="860.0,170.0 880.0,180.0 880.0,200.0 860.0,190.0" fill="#7A8298"/><polygon points="900.0,170.0 880.0,180.0 880.0,200.0 900.0,190.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.54s"><polygon points="920.0,160.0 940.0,170.0 920.0,180.0 900.0,170.0" fill="#8C94A6"/><polygon points="900.0,170.0 920.0,180.0 920.0,200.0 900.0,190.0" fill="#687087"/><polygon points="940.0,170.0 920.0,180.0 920.0,200.0 940.0,190.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.18s"><polygon points="740.0,230.0 760.0,240.0 740.0,250.0 720.0,240.0" fill="#8C94A6"/><polygon points="720.0,240.0 740.0,250.0 740.0,270.0 720.0,260.0" fill="#687087"/><polygon points="760.0,240.0 740.0,250.0 740.0,270.0 760.0,260.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.18s"><polygon points="860.0,230.0 880.0,240.0 860.0,250.0 840.0,240.0" fill="#9AA2B4"/><polygon points="840.0,240.0 860.0,250.0 860.0,270.0 840.0,260.0" fill="#727A90"/><polygon points="880.0,240.0 860.0,250.0 860.0,270.0 880.0,260.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.18s"><polygon points="900.0,230.0 920.0,240.0 900.0,250.0 880.0,240.0" fill="#9AA2B4"/><polygon points="880.0,240.0 900.0,250.0 900.0,270.0 880.0,260.0" fill="#727A90"/><polygon points="920.0,240.0 900.0,250.0 900.0,270.0 920.0,260.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.18s"><polygon points="940.0,230.0 960.0,240.0 940.0,250.0 920.0,240.0" fill="#A5ADBE"/><polygon points="920.0,240.0 940.0,250.0 940.0,270.0 920.0,260.0" fill="#7A8298"/><polygon points="960.0,240.0 940.0,250.0 940.0,270.0 960.0,260.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.18s"><polygon points="1060.0,230.0 1080.0,240.0 1060.0,250.0 1040.0,240.0" fill="#8C94A6"/><polygon points="1040.0,240.0 1060.0,250.0 1060.0,270.0 1040.0,260.0" fill="#687087"/><polygon points="1080.0,240.0 1060.0,250.0 1060.0,270.0 1080.0,260.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.31s"><polygon points="740.0,210.0 760.0,220.0 740.0,230.0 720.0,220.0" fill="#8C94A6"/><polygon points="720.0,220.0 740.0,230.0 740.0,250.0 720.0,240.0" fill="#687087"/><polygon points="760.0,220.0 740.0,230.0 740.0,250.0 760.0,240.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.31s"><polygon points="860.0,210.0 880.0,220.0 860.0,230.0 840.0,220.0" fill="#A5ADBE"/><polygon points="840.0,220.0 860.0,230.0 860.0,250.0 840.0,240.0" fill="#7A8298"/><polygon points="880.0,220.0 860.0,230.0 860.0,250.0 880.0,240.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.31s"><polygon points="900.0,210.0 920.0,220.0 900.0,230.0 880.0,220.0" fill="#A5ADBE"/><polygon points="880.0,220.0 900.0,230.0 900.0,250.0 880.0,240.0" fill="#7A8298"/><polygon points="920.0,220.0 900.0,230.0 900.0,250.0 920.0,240.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.31s"><polygon points="940.0,210.0 960.0,220.0 940.0,230.0 920.0,220.0" fill="#A5ADBE"/><polygon points="920.0,220.0 940.0,230.0 940.0,250.0 920.0,240.0" fill="#7A8298"/><polygon points="960.0,220.0 940.0,230.0 940.0,250.0 960.0,240.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.31s"><polygon points="1060.0,210.0 1080.0,220.0 1060.0,230.0 1040.0,220.0" fill="#A5ADBE"/><polygon points="1040.0,220.0 1060.0,230.0 1060.0,250.0 1040.0,240.0" fill="#7A8298"/><polygon points="1080.0,220.0 1060.0,230.0 1060.0,250.0 1080.0,240.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.44s"><polygon points="740.0,190.0 760.0,200.0 740.0,210.0 720.0,200.0" fill="#A5ADBE"/><polygon points="720.0,200.0 740.0,210.0 740.0,230.0 720.0,220.0" fill="#7A8298"/><polygon points="760.0,200.0 740.0,210.0 740.0,230.0 760.0,220.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.44s"><polygon points="860.0,190.0 880.0,200.0 860.0,210.0 840.0,200.0" fill="#A5ADBE"/><polygon points="840.0,200.0 860.0,210.0 860.0,230.0 840.0,220.0" fill="#7A8298"/><polygon points="880.0,200.0 860.0,210.0 860.0,230.0 880.0,220.0" fill="#60677D"/><polygon points="846.0,207.0 854.0,211.0 854.0,222.0 846.0,218.0" fill="#F5B93A"/></g>
+<g class="b" style="animation-delay:0.44s"><polygon points="900.0,190.0 920.0,200.0 900.0,210.0 880.0,200.0" fill="#A5ADBE"/><polygon points="880.0,200.0 900.0,210.0 900.0,230.0 880.0,220.0" fill="#7A8298"/><polygon points="920.0,200.0 900.0,210.0 900.0,230.0 920.0,220.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.44s"><polygon points="940.0,190.0 960.0,200.0 940.0,210.0 920.0,200.0" fill="#8C94A6"/><polygon points="920.0,200.0 940.0,210.0 940.0,230.0 920.0,220.0" fill="#687087"/><polygon points="960.0,200.0 940.0,210.0 940.0,230.0 960.0,220.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.44s"><polygon points="1060.0,190.0 1080.0,200.0 1060.0,210.0 1040.0,200.0" fill="#9AA2B4"/><polygon points="1040.0,200.0 1060.0,210.0 1060.0,230.0 1040.0,220.0" fill="#727A90"/><polygon points="1080.0,200.0 1060.0,210.0 1060.0,230.0 1080.0,220.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.57s"><polygon points="740.0,170.0 760.0,180.0 740.0,190.0 720.0,180.0" fill="#A5ADBE"/><polygon points="720.0,180.0 740.0,190.0 740.0,210.0 720.0,200.0" fill="#7A8298"/><polygon points="760.0,180.0 740.0,190.0 740.0,210.0 760.0,200.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.57s"><polygon points="860.0,170.0 880.0,180.0 860.0,190.0 840.0,180.0" fill="#8C94A6"/><polygon points="840.0,180.0 860.0,190.0 860.0,210.0 840.0,200.0" fill="#687087"/><polygon points="880.0,180.0 860.0,190.0 860.0,210.0 880.0,200.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.57s"><polygon points="900.0,170.0 920.0,180.0 900.0,190.0 880.0,180.0" fill="#9AA2B4"/><polygon points="880.0,180.0 900.0,190.0 900.0,210.0 880.0,200.0" fill="#727A90"/><polygon points="920.0,180.0 900.0,190.0 900.0,210.0 920.0,200.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.57s"><polygon points="940.0,170.0 960.0,180.0 940.0,190.0 920.0,180.0" fill="#A5ADBE"/><polygon points="920.0,180.0 940.0,190.0 940.0,210.0 920.0,200.0" fill="#7A8298"/><polygon points="960.0,180.0 940.0,190.0 940.0,210.0 960.0,200.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.57s"><polygon points="1060.0,170.0 1080.0,180.0 1060.0,190.0 1040.0,180.0" fill="#9AA2B4"/><polygon points="1040.0,180.0 1060.0,190.0 1060.0,210.0 1040.0,200.0" fill="#727A90"/><polygon points="1080.0,180.0 1060.0,190.0 1060.0,210.0 1080.0,200.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.70s"><polygon points="740.0,150.0 760.0,160.0 740.0,170.0 720.0,160.0" fill="#8C94A6"/><polygon points="720.0,160.0 740.0,170.0 740.0,190.0 720.0,180.0" fill="#687087"/><polygon points="760.0,160.0 740.0,170.0 740.0,190.0 760.0,180.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.70s"><polygon points="860.0,150.0 880.0,160.0 860.0,170.0 840.0,160.0" fill="#A5ADBE"/><polygon points="840.0,160.0 860.0,170.0 860.0,190.0 840.0,180.0" fill="#7A8298"/><polygon points="880.0,160.0 860.0,170.0 860.0,190.0 880.0,180.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.70s"><g class="torch"><polygon points="900.0,166.0 908.0,170.0 900.0,174.0 892.0,170.0" fill="#FFE08A"/><polygon points="892.0,170.0 900.0,174.0 900.0,184.0 892.0,180.0" fill="#F5B93A"/><polygon points="908.0,170.0 900.0,174.0 900.0,184.0 908.0,180.0" fill="#D9982A"/></g></g>
+<g class="b" style="animation-delay:0.70s"><polygon points="940.0,150.0 960.0,160.0 940.0,170.0 920.0,160.0" fill="#A5ADBE"/><polygon points="920.0,160.0 940.0,170.0 940.0,190.0 920.0,180.0" fill="#7A8298"/><polygon points="960.0,160.0 940.0,170.0 940.0,190.0 960.0,180.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.70s"><polygon points="1060.0,150.0 1080.0,160.0 1060.0,170.0 1040.0,160.0" fill="#A5ADBE"/><polygon points="1040.0,160.0 1060.0,170.0 1060.0,190.0 1040.0,180.0" fill="#7A8298"/><polygon points="1080.0,160.0 1060.0,170.0 1060.0,190.0 1080.0,180.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.83s"><g class="torch"><polygon points="740.0,146.0 748.0,150.0 740.0,154.0 732.0,150.0" fill="#FFE08A"/><polygon points="732.0,150.0 740.0,154.0 740.0,164.0 732.0,160.0" fill="#F5B93A"/><polygon points="748.0,150.0 740.0,154.0 740.0,164.0 748.0,160.0" fill="#D9982A"/></g></g>
+<g class="b" style="animation-delay:0.83s"><g class="torch"><polygon points="1060.0,146.0 1068.0,150.0 1060.0,154.0 1052.0,150.0" fill="#FFE08A"/><polygon points="1052.0,150.0 1060.0,154.0 1060.0,164.0 1052.0,160.0" fill="#F5B93A"/><polygon points="1068.0,150.0 1060.0,154.0 1060.0,164.0 1068.0,160.0" fill="#D9982A"/></g></g>
+<g class="b" style="animation-delay:0.20s"><polygon points="760.0,240.0 780.0,250.0 760.0,260.0 740.0,250.0" fill="#A5ADBE"/><polygon points="740.0,250.0 760.0,260.0 760.0,280.0 740.0,270.0" fill="#7A8298"/><polygon points="780.0,250.0 760.0,260.0 760.0,280.0 780.0,270.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.20s"><polygon points="880.0,240.0 900.0,250.0 880.0,260.0 860.0,250.0" fill="#A5ADBE"/><polygon points="860.0,250.0 880.0,260.0 880.0,280.0 860.0,270.0" fill="#7A8298"/><polygon points="900.0,250.0 880.0,260.0 880.0,280.0 900.0,270.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.20s"><polygon points="920.0,240.0 940.0,250.0 920.0,260.0 900.0,250.0" fill="#9AA2B4"/><polygon points="900.0,250.0 920.0,260.0 920.0,280.0 900.0,270.0" fill="#727A90"/><polygon points="940.0,250.0 920.0,260.0 920.0,280.0 940.0,270.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.20s"><polygon points="1040.0,240.0 1060.0,250.0 1040.0,260.0 1020.0,250.0" fill="#8C94A6"/><polygon points="1020.0,250.0 1040.0,260.0 1040.0,280.0 1020.0,270.0" fill="#687087"/><polygon points="1060.0,250.0 1040.0,260.0 1040.0,280.0 1060.0,270.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.33s"><polygon points="760.0,220.0 780.0,230.0 760.0,240.0 740.0,230.0" fill="#9AA2B4"/><polygon points="740.0,230.0 760.0,240.0 760.0,260.0 740.0,250.0" fill="#727A90"/><polygon points="780.0,230.0 760.0,240.0 760.0,260.0 780.0,250.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.33s"><polygon points="880.0,220.0 900.0,230.0 880.0,240.0 860.0,230.0" fill="#9AA2B4"/><polygon points="860.0,230.0 880.0,240.0 880.0,260.0 860.0,250.0" fill="#727A90"/><polygon points="900.0,230.0 880.0,240.0 880.0,260.0 900.0,250.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.33s"><polygon points="920.0,220.0 940.0,230.0 920.0,240.0 900.0,230.0" fill="#A5ADBE"/><polygon points="900.0,230.0 920.0,240.0 920.0,260.0 900.0,250.0" fill="#7A8298"/><polygon points="940.0,230.0 920.0,240.0 920.0,260.0 940.0,250.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.33s"><polygon points="1040.0,220.0 1060.0,230.0 1040.0,240.0 1020.0,230.0" fill="#A5ADBE"/><polygon points="1020.0,230.0 1040.0,240.0 1040.0,260.0 1020.0,250.0" fill="#7A8298"/><polygon points="1060.0,230.0 1040.0,240.0 1040.0,260.0 1060.0,250.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.46s"><polygon points="760.0,200.0 780.0,210.0 760.0,220.0 740.0,210.0" fill="#9AA2B4"/><polygon points="740.0,210.0 760.0,220.0 760.0,240.0 740.0,230.0" fill="#727A90"/><polygon points="780.0,210.0 760.0,220.0 760.0,240.0 780.0,230.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.46s"><polygon points="880.0,200.0 900.0,210.0 880.0,220.0 860.0,210.0" fill="#9AA2B4"/><polygon points="860.0,210.0 880.0,220.0 880.0,240.0 860.0,230.0" fill="#727A90"/><polygon points="900.0,210.0 880.0,220.0 880.0,240.0 900.0,230.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.46s"><polygon points="920.0,200.0 940.0,210.0 920.0,220.0 900.0,210.0" fill="#9AA2B4"/><polygon points="900.0,210.0 920.0,220.0 920.0,240.0 900.0,230.0" fill="#727A90"/><polygon points="940.0,210.0 920.0,220.0 920.0,240.0 940.0,230.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.46s"><polygon points="1040.0,200.0 1060.0,210.0 1040.0,220.0 1020.0,210.0" fill="#8C94A6"/><polygon points="1020.0,210.0 1040.0,220.0 1040.0,240.0 1020.0,230.0" fill="#687087"/><polygon points="1060.0,210.0 1040.0,220.0 1040.0,240.0 1060.0,230.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.59s"><polygon points="880.0,180.0 900.0,190.0 880.0,200.0 860.0,190.0" fill="#9AA2B4"/><polygon points="860.0,190.0 880.0,200.0 880.0,220.0 860.0,210.0" fill="#727A90"/><polygon points="900.0,190.0 880.0,200.0 880.0,220.0 900.0,210.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.59s"><polygon points="920.0,180.0 940.0,190.0 920.0,200.0 900.0,190.0" fill="#A5ADBE"/><polygon points="900.0,190.0 920.0,200.0 920.0,220.0 900.0,210.0" fill="#7A8298"/><polygon points="940.0,190.0 920.0,200.0 920.0,220.0 940.0,210.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.22s"><polygon points="780.0,250.0 800.0,260.0 780.0,270.0 760.0,260.0" fill="#8C94A6"/><polygon points="760.0,260.0 780.0,270.0 780.0,290.0 760.0,280.0" fill="#687087"/><polygon points="800.0,260.0 780.0,270.0 780.0,290.0 800.0,280.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.22s"><polygon points="900.0,250.0 920.0,260.0 900.0,270.0 880.0,260.0" fill="#8C94A6"/><polygon points="880.0,260.0 900.0,270.0 900.0,290.0 880.0,280.0" fill="#687087"/><polygon points="920.0,260.0 900.0,270.0 900.0,290.0 920.0,280.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.22s"><polygon points="1020.0,250.0 1040.0,260.0 1020.0,270.0 1000.0,260.0" fill="#9AA2B4"/><polygon points="1000.0,260.0 1020.0,270.0 1020.0,290.0 1000.0,280.0" fill="#727A90"/><polygon points="1040.0,260.0 1020.0,270.0 1020.0,290.0 1040.0,280.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.35s"><polygon points="780.0,230.0 800.0,240.0 780.0,250.0 760.0,240.0" fill="#8C94A6"/><polygon points="760.0,240.0 780.0,250.0 780.0,270.0 760.0,260.0" fill="#687087"/><polygon points="800.0,240.0 780.0,250.0 780.0,270.0 800.0,260.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.35s"><polygon points="900.0,230.0 920.0,240.0 900.0,250.0 880.0,240.0" fill="#A5ADBE"/><polygon points="880.0,240.0 900.0,250.0 900.0,270.0 880.0,260.0" fill="#7A8298"/><polygon points="920.0,240.0 900.0,250.0 900.0,270.0 920.0,260.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.35s"><polygon points="1020.0,230.0 1040.0,240.0 1020.0,250.0 1000.0,240.0" fill="#9AA2B4"/><polygon points="1000.0,240.0 1020.0,250.0 1020.0,270.0 1000.0,260.0" fill="#727A90"/><polygon points="1040.0,240.0 1020.0,250.0 1020.0,270.0 1040.0,260.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.48s"><polygon points="780.0,210.0 800.0,220.0 780.0,230.0 760.0,220.0" fill="#9AA2B4"/><polygon points="760.0,220.0 780.0,230.0 780.0,250.0 760.0,240.0" fill="#727A90"/><polygon points="800.0,220.0 780.0,230.0 780.0,250.0 800.0,240.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.48s"><polygon points="900.0,210.0 920.0,220.0 900.0,230.0 880.0,220.0" fill="#A5ADBE"/><polygon points="880.0,220.0 900.0,230.0 900.0,250.0 880.0,240.0" fill="#7A8298"/><polygon points="920.0,220.0 900.0,230.0 900.0,250.0 920.0,240.0" fill="#60677D"/><polygon points="886.0,227.0 894.0,231.0 894.0,242.0 886.0,238.0" fill="#F5B93A"/></g>
+<g class="b" style="animation-delay:0.48s"><polygon points="1020.0,210.0 1040.0,220.0 1020.0,230.0 1000.0,220.0" fill="#8C94A6"/><polygon points="1000.0,220.0 1020.0,230.0 1020.0,250.0 1000.0,240.0" fill="#687087"/><polygon points="1040.0,220.0 1020.0,230.0 1020.0,250.0 1040.0,240.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.61s"><polygon points="780.0,190.0 800.0,200.0 780.0,210.0 760.0,200.0" fill="#9AA2B4"/><polygon points="760.0,200.0 780.0,210.0 780.0,230.0 760.0,220.0" fill="#727A90"/><polygon points="800.0,200.0 780.0,210.0 780.0,230.0 800.0,220.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.61s"><polygon points="900.0,190.0 920.0,200.0 900.0,210.0 880.0,200.0" fill="#9AA2B4"/><polygon points="880.0,200.0 900.0,210.0 900.0,230.0 880.0,220.0" fill="#727A90"/><polygon points="920.0,200.0 900.0,210.0 900.0,230.0 920.0,220.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.61s"><polygon points="1020.0,190.0 1040.0,200.0 1020.0,210.0 1000.0,200.0" fill="#9AA2B4"/><polygon points="1000.0,200.0 1020.0,210.0 1020.0,230.0 1000.0,220.0" fill="#727A90"/><polygon points="1040.0,200.0 1020.0,210.0 1020.0,230.0 1040.0,220.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.74s"><polygon points="900.0,170.0 920.0,180.0 900.0,190.0 880.0,180.0" fill="#A5ADBE"/><polygon points="880.0,180.0 900.0,190.0 900.0,210.0 880.0,200.0" fill="#7A8298"/><polygon points="920.0,180.0 900.0,190.0 900.0,210.0 920.0,200.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.24s"><polygon points="800.0,260.0 820.0,270.0 800.0,280.0 780.0,270.0" fill="#A5ADBE"/><polygon points="780.0,270.0 800.0,280.0 800.0,300.0 780.0,290.0" fill="#7A8298"/><polygon points="820.0,270.0 800.0,280.0 800.0,300.0 820.0,290.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.24s"><polygon points="1000.0,260.0 1020.0,270.0 1000.0,280.0 980.0,270.0" fill="#A5ADBE"/><polygon points="980.0,270.0 1000.0,280.0 1000.0,300.0 980.0,290.0" fill="#7A8298"/><polygon points="1020.0,270.0 1000.0,280.0 1000.0,300.0 1020.0,290.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.37s"><polygon points="800.0,240.0 820.0,250.0 800.0,260.0 780.0,250.0" fill="#8C94A6"/><polygon points="780.0,250.0 800.0,260.0 800.0,280.0 780.0,270.0" fill="#687087"/><polygon points="820.0,250.0 800.0,260.0 800.0,280.0 820.0,270.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.37s"><polygon points="1000.0,240.0 1020.0,250.0 1000.0,260.0 980.0,250.0" fill="#8C94A6"/><polygon points="980.0,250.0 1000.0,260.0 1000.0,280.0 980.0,270.0" fill="#687087"/><polygon points="1020.0,250.0 1000.0,260.0 1000.0,280.0 1020.0,270.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.50s"><polygon points="800.0,220.0 820.0,230.0 800.0,240.0 780.0,230.0" fill="#9AA2B4"/><polygon points="780.0,230.0 800.0,240.0 800.0,260.0 780.0,250.0" fill="#727A90"/><polygon points="820.0,230.0 800.0,240.0 800.0,260.0 820.0,250.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.50s"><polygon points="1000.0,220.0 1020.0,230.0 1000.0,240.0 980.0,230.0" fill="#9AA2B4"/><polygon points="980.0,230.0 1000.0,240.0 1000.0,260.0 980.0,250.0" fill="#727A90"/><polygon points="1020.0,230.0 1000.0,240.0 1000.0,260.0 1020.0,250.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.26s"><polygon points="980.0,270.0 1000.0,280.0 980.0,290.0 960.0,280.0" fill="#8C94A6"/><polygon points="960.0,280.0 980.0,290.0 980.0,310.0 960.0,300.0" fill="#687087"/><polygon points="1000.0,280.0 980.0,290.0 980.0,310.0 1000.0,300.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.39s"><polygon points="980.0,250.0 1000.0,260.0 980.0,270.0 960.0,260.0" fill="#A5ADBE"/><polygon points="960.0,260.0 980.0,270.0 980.0,290.0 960.0,280.0" fill="#7A8298"/><polygon points="1000.0,260.0 980.0,270.0 980.0,290.0 1000.0,280.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.52s"><polygon points="820.0,230.0 840.0,240.0 820.0,250.0 800.0,240.0" fill="#9AA2B4"/><polygon points="800.0,240.0 820.0,250.0 820.0,270.0 800.0,260.0" fill="#727A90"/><polygon points="840.0,240.0 820.0,250.0 820.0,270.0 840.0,260.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.52s"><polygon points="980.0,230.0 1000.0,240.0 980.0,250.0 960.0,240.0" fill="#9AA2B4"/><polygon points="960.0,240.0 980.0,250.0 980.0,270.0 960.0,260.0" fill="#727A90"/><polygon points="1000.0,240.0 980.0,250.0 980.0,270.0 1000.0,260.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.65s"><polygon points="820.0,210.0 840.0,220.0 820.0,230.0 800.0,220.0" fill="#A5ADBE"/><polygon points="800.0,220.0 820.0,230.0 820.0,250.0 800.0,240.0" fill="#7A8298"/><polygon points="840.0,220.0 820.0,230.0 820.0,250.0 840.0,240.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.65s"><polygon points="980.0,210.0 1000.0,220.0 980.0,230.0 960.0,220.0" fill="#8C94A6"/><polygon points="960.0,220.0 980.0,230.0 980.0,250.0 960.0,240.0" fill="#687087"/><polygon points="1000.0,220.0 980.0,230.0 980.0,250.0 1000.0,240.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.29s"><polygon points="840.0,280.0 860.0,290.0 840.0,300.0 820.0,290.0" fill="#8C94A6"/><polygon points="820.0,290.0 840.0,300.0 840.0,320.0 820.0,310.0" fill="#687087"/><polygon points="860.0,290.0 840.0,300.0 840.0,320.0 860.0,310.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.29s"><polygon points="960.0,280.0 980.0,290.0 960.0,300.0 940.0,290.0" fill="#9AA2B4"/><polygon points="940.0,290.0 960.0,300.0 960.0,320.0 940.0,310.0" fill="#727A90"/><polygon points="980.0,290.0 960.0,300.0 960.0,320.0 980.0,310.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.42s"><polygon points="840.0,260.0 860.0,270.0 840.0,280.0 820.0,270.0" fill="#9AA2B4"/><polygon points="820.0,270.0 840.0,280.0 840.0,300.0 820.0,290.0" fill="#727A90"/><polygon points="860.0,270.0 840.0,280.0 840.0,300.0 860.0,290.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.42s"><polygon points="960.0,260.0 980.0,270.0 960.0,280.0 940.0,270.0" fill="#A5ADBE"/><polygon points="940.0,270.0 960.0,280.0 960.0,300.0 940.0,290.0" fill="#7A8298"/><polygon points="980.0,270.0 960.0,280.0 960.0,300.0 980.0,290.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.55s"><polygon points="840.0,240.0 860.0,250.0 840.0,260.0 820.0,250.0" fill="#9AA2B4"/><polygon points="820.0,250.0 840.0,260.0 840.0,280.0 820.0,270.0" fill="#727A90"/><polygon points="860.0,250.0 840.0,260.0 840.0,280.0 860.0,270.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.55s"><polygon points="960.0,240.0 980.0,250.0 960.0,260.0 940.0,250.0" fill="#9AA2B4"/><polygon points="940.0,250.0 960.0,260.0 960.0,280.0 940.0,270.0" fill="#727A90"/><polygon points="980.0,250.0 960.0,260.0 960.0,280.0 980.0,270.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.31s"><polygon points="860.0,290.0 880.0,300.0 860.0,310.0 840.0,300.0" fill="#8C94A6"/><polygon points="840.0,300.0 860.0,310.0 860.0,330.0 840.0,320.0" fill="#687087"/><polygon points="880.0,300.0 860.0,310.0 860.0,330.0 880.0,320.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.31s"><polygon points="940.0,290.0 960.0,300.0 940.0,310.0 920.0,300.0" fill="#8C94A6"/><polygon points="920.0,300.0 940.0,310.0 940.0,330.0 920.0,320.0" fill="#687087"/><polygon points="960.0,300.0 940.0,310.0 940.0,330.0 960.0,320.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.44s"><polygon points="860.0,270.0 880.0,280.0 860.0,290.0 840.0,280.0" fill="#A5ADBE"/><polygon points="840.0,280.0 860.0,290.0 860.0,310.0 840.0,300.0" fill="#7A8298"/><polygon points="880.0,280.0 860.0,290.0 860.0,310.0 880.0,300.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.44s"><polygon points="940.0,270.0 960.0,280.0 940.0,290.0 920.0,280.0" fill="#9AA2B4"/><polygon points="920.0,280.0 940.0,290.0 940.0,310.0 920.0,300.0" fill="#727A90"/><polygon points="960.0,280.0 940.0,290.0 940.0,310.0 960.0,300.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.57s"><polygon points="860.0,250.0 880.0,260.0 860.0,270.0 840.0,260.0" fill="#8C94A6"/><polygon points="840.0,260.0 860.0,270.0 860.0,290.0 840.0,280.0" fill="#687087"/><polygon points="880.0,260.0 860.0,270.0 860.0,290.0 880.0,280.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.57s"><polygon points="940.0,250.0 960.0,260.0 940.0,270.0 920.0,260.0" fill="#A5ADBE"/><polygon points="920.0,260.0 940.0,270.0 940.0,290.0 920.0,280.0" fill="#7A8298"/><polygon points="960.0,260.0 940.0,270.0 940.0,290.0 960.0,280.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.70s"><polygon points="860.0,230.0 880.0,240.0 860.0,250.0 840.0,240.0" fill="#9AA2B4"/><polygon points="840.0,240.0 860.0,250.0 860.0,270.0 840.0,260.0" fill="#727A90"/><polygon points="880.0,240.0 860.0,250.0 860.0,270.0 880.0,260.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.70s"><polygon points="940.0,230.0 960.0,240.0 940.0,250.0 920.0,240.0" fill="#8C94A6"/><polygon points="920.0,240.0 940.0,250.0 940.0,270.0 920.0,260.0" fill="#687087"/><polygon points="960.0,240.0 940.0,250.0 940.0,270.0 960.0,260.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.33s"><polygon points="880.0,300.0 900.0,310.0 880.0,320.0 860.0,310.0" fill="#9AA2B4"/><polygon points="860.0,310.0 880.0,320.0 880.0,340.0 860.0,330.0" fill="#727A90"/><polygon points="900.0,310.0 880.0,320.0 880.0,340.0 900.0,330.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.33s"><polygon points="920.0,300.0 940.0,310.0 920.0,320.0 900.0,310.0" fill="#9AA2B4"/><polygon points="900.0,310.0 920.0,320.0 920.0,340.0 900.0,330.0" fill="#727A90"/><polygon points="940.0,310.0 920.0,320.0 920.0,340.0 940.0,330.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.46s"><polygon points="880.0,280.0 900.0,290.0 880.0,300.0 860.0,290.0" fill="#A5ADBE"/><polygon points="860.0,290.0 880.0,300.0 880.0,320.0 860.0,310.0" fill="#7A8298"/><polygon points="900.0,290.0 880.0,300.0 880.0,320.0 900.0,310.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.46s"><polygon points="920.0,280.0 940.0,290.0 920.0,300.0 900.0,290.0" fill="#A5ADBE"/><polygon points="900.0,290.0 920.0,300.0 920.0,320.0 900.0,310.0" fill="#7A8298"/><polygon points="940.0,290.0 920.0,300.0 920.0,320.0 940.0,310.0" fill="#60677D"/></g>
+<g class="b" style="animation-delay:0.59s"><polygon points="880.0,260.0 900.0,270.0 880.0,280.0 860.0,270.0" fill="#9AA2B4"/><polygon points="860.0,270.0 880.0,280.0 880.0,300.0 860.0,290.0" fill="#727A90"/><polygon points="900.0,270.0 880.0,280.0 880.0,300.0 900.0,290.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.59s"><polygon points="920.0,260.0 940.0,270.0 920.0,280.0 900.0,270.0" fill="#9AA2B4"/><polygon points="900.0,270.0 920.0,280.0 920.0,300.0 900.0,290.0" fill="#727A90"/><polygon points="940.0,270.0 920.0,280.0 920.0,300.0 940.0,290.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.35s"><polygon points="900.0,310.0 920.0,320.0 900.0,330.0 880.0,320.0" fill="#8C94A6"/><polygon points="880.0,320.0 900.0,330.0 900.0,350.0 880.0,340.0" fill="#687087"/><polygon points="920.0,320.0 900.0,330.0 900.0,350.0 920.0,340.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.48s"><polygon points="900.0,290.0 920.0,300.0 900.0,310.0 880.0,300.0" fill="#8C94A6"/><polygon points="880.0,300.0 900.0,310.0 900.0,330.0 880.0,320.0" fill="#687087"/><polygon points="920.0,300.0 900.0,310.0 900.0,330.0 920.0,320.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.61s"><polygon points="900.0,270.0 920.0,280.0 900.0,290.0 880.0,280.0" fill="#8C94A6"/><polygon points="880.0,280.0 900.0,290.0 900.0,310.0 880.0,300.0" fill="#687087"/><polygon points="920.0,280.0 900.0,290.0 900.0,310.0 920.0,300.0" fill="#525970"/></g>
+<g class="b" style="animation-delay:0.74s"><polygon points="900.0,250.0 920.0,260.0 900.0,270.0 880.0,260.0" fill="#9AA2B4"/><polygon points="880.0,260.0 900.0,270.0 900.0,290.0 880.0,280.0" fill="#727A90"/><polygon points="920.0,260.0 900.0,270.0 900.0,290.0 920.0,280.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:0.87s"><polygon points="900.0,230.0 920.0,240.0 900.0,250.0 880.0,240.0" fill="#9AA2B4"/><polygon points="880.0,240.0 900.0,250.0 900.0,270.0 880.0,260.0" fill="#727A90"/><polygon points="920.0,240.0 900.0,250.0 900.0,270.0 920.0,260.0" fill="#5A6177"/></g>
+<g class="b" style="animation-delay:1.00s"><g class="torch"><polygon points="900.0,226.0 908.0,230.0 900.0,234.0 892.0,230.0" fill="#FFE08A"/><polygon points="892.0,230.0 900.0,234.0 900.0,244.0 892.0,240.0" fill="#F5B93A"/><polygon points="908.0,230.0 900.0,234.0 900.0,244.0 908.0,240.0" fill="#D9982A"/></g></g>
+<polygon points="800.0,260.0 820.0,270.0 820.0,310.0 800.0,300.0" fill="#1B2242"/>
+<g class="paulin"><g class="paul"><polygon points="726.0,266.0 735.0,270.5 726.0,275.0 717.0,270.5" fill="#C3CCDB"/><polygon points="717.0,270.5 726.0,275.0 726.0,286.0 717.0,281.5" fill="#99A5BA"/><polygon points="735.0,270.5 726.0,275.0 726.0,286.0 735.0,281.5" fill="#7F8BA1"/><polygon points="726.0,255.0 735.0,259.5 726.0,264.0 717.0,259.5" fill="#DDE5F0"/><polygon points="717.0,259.5 726.0,264.0 726.0,275.0 717.0,270.5" fill="#B4BFD0"/><polygon points="735.0,259.5 726.0,264.0 726.0,275.0 735.0,270.5" fill="#96A2B6"/><polygon points="718.6,263.4 720.6,264.4 720.6,267.7 718.6,266.7" fill="#F5B93A"/><polygon points="722.4,265.3 724.4,266.3 724.4,269.6 722.4,268.6" fill="#F5B93A"/></g></g>
+<g class="c" style="animation-delay:0.43s"><rect x="67" y="121" width="12" height="12" fill="#151C3B"/><rect x="64" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.45s"><rect x="79" y="121" width="12" height="12" fill="#151C3B"/><rect x="76" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.47s"><rect x="91" y="121" width="12" height="12" fill="#151C3B"/><rect x="88" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.48s"><rect x="103" y="121" width="12" height="12" fill="#151C3B"/><rect x="100" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.40s"><rect x="67" y="133" width="12" height="12" fill="#151C3B"/><rect x="64" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.47s"><rect x="115" y="133" width="12" height="12" fill="#151C3B"/><rect x="112" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.37s"><rect x="67" y="145" width="12" height="12" fill="#151C3B"/><rect x="64" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.44s"><rect x="115" y="145" width="12" height="12" fill="#151C3B"/><rect x="112" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.34s"><rect x="67" y="157" width="12" height="12" fill="#151C3B"/><rect x="64" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.36s"><rect x="79" y="157" width="12" height="12" fill="#151C3B"/><rect x="76" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.38s"><rect x="91" y="157" width="12" height="12" fill="#151C3B"/><rect x="88" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.39s"><rect x="103" y="157" width="12" height="12" fill="#151C3B"/><rect x="100" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.31s"><rect x="67" y="169" width="12" height="12" fill="#151C3B"/><rect x="64" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.38s"><rect x="115" y="169" width="12" height="12" fill="#151C3B"/><rect x="112" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.28s"><rect x="67" y="181" width="12" height="12" fill="#151C3B"/><rect x="64" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.35s"><rect x="115" y="181" width="12" height="12" fill="#151C3B"/><rect x="112" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.25s"><rect x="67" y="193" width="12" height="12" fill="#151C3B"/><rect x="64" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.27s"><rect x="79" y="193" width="12" height="12" fill="#151C3B"/><rect x="76" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.29s"><rect x="91" y="193" width="12" height="12" fill="#151C3B"/><rect x="88" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.30s"><rect x="103" y="193" width="12" height="12" fill="#151C3B"/><rect x="100" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.54s"><rect x="139" y="121" width="12" height="12" fill="#151C3B"/><rect x="136" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.56s"><rect x="151" y="121" width="12" height="12" fill="#151C3B"/><rect x="148" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.57s"><rect x="163" y="121" width="12" height="12" fill="#151C3B"/><rect x="160" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.59s"><rect x="175" y="121" width="12" height="12" fill="#151C3B"/><rect x="172" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.61s"><rect x="187" y="121" width="12" height="12" fill="#151C3B"/><rect x="184" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.51s"><rect x="139" y="133" width="12" height="12" fill="#151C3B"/><rect x="136" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.48s"><rect x="139" y="145" width="12" height="12" fill="#151C3B"/><rect x="136" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.45s"><rect x="139" y="157" width="12" height="12" fill="#151C3B"/><rect x="136" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.47s"><rect x="151" y="157" width="12" height="12" fill="#151C3B"/><rect x="148" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.48s"><rect x="163" y="157" width="12" height="12" fill="#151C3B"/><rect x="160" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.50s"><rect x="175" y="157" width="12" height="12" fill="#151C3B"/><rect x="172" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.42s"><rect x="139" y="169" width="12" height="12" fill="#151C3B"/><rect x="136" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.39s"><rect x="139" y="181" width="12" height="12" fill="#151C3B"/><rect x="136" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.36s"><rect x="139" y="193" width="12" height="12" fill="#151C3B"/><rect x="136" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.38s"><rect x="151" y="193" width="12" height="12" fill="#151C3B"/><rect x="148" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.39s"><rect x="163" y="193" width="12" height="12" fill="#151C3B"/><rect x="160" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.41s"><rect x="175" y="193" width="12" height="12" fill="#151C3B"/><rect x="172" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.43s"><rect x="187" y="193" width="12" height="12" fill="#151C3B"/><rect x="184" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.65s"><rect x="211" y="121" width="12" height="12" fill="#151C3B"/><rect x="208" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.72s"><rect x="259" y="121" width="12" height="12" fill="#151C3B"/><rect x="256" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.62s"><rect x="211" y="133" width="12" height="12" fill="#151C3B"/><rect x="208" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.63s"><rect x="223" y="133" width="12" height="12" fill="#151C3B"/><rect x="220" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.69s"><rect x="259" y="133" width="12" height="12" fill="#151C3B"/><rect x="256" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.59s"><rect x="211" y="145" width="12" height="12" fill="#151C3B"/><rect x="208" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.62s"><rect x="235" y="145" width="12" height="12" fill="#151C3B"/><rect x="232" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.66s"><rect x="259" y="145" width="12" height="12" fill="#151C3B"/><rect x="256" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.56s"><rect x="211" y="157" width="12" height="12" fill="#151C3B"/><rect x="208" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.59s"><rect x="235" y="157" width="12" height="12" fill="#151C3B"/><rect x="232" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.63s"><rect x="259" y="157" width="12" height="12" fill="#151C3B"/><rect x="256" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.53s"><rect x="211" y="169" width="12" height="12" fill="#151C3B"/><rect x="208" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.58s"><rect x="247" y="169" width="12" height="12" fill="#151C3B"/><rect x="244" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.60s"><rect x="259" y="169" width="12" height="12" fill="#151C3B"/><rect x="256" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.50s"><rect x="211" y="181" width="12" height="12" fill="#151C3B"/><rect x="208" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.57s"><rect x="259" y="181" width="12" height="12" fill="#151C3B"/><rect x="256" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.47s"><rect x="211" y="193" width="12" height="12" fill="#151C3B"/><rect x="208" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.54s"><rect x="259" y="193" width="12" height="12" fill="#151C3B"/><rect x="256" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.77s"><rect x="295" y="121" width="12" height="12" fill="#151C3B"/><rect x="292" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.79s"><rect x="307" y="121" width="12" height="12" fill="#151C3B"/><rect x="304" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.81s"><rect x="319" y="121" width="12" height="12" fill="#151C3B"/><rect x="316" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.83s"><rect x="331" y="121" width="12" height="12" fill="#151C3B"/><rect x="328" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.72s"><rect x="283" y="133" width="12" height="12" fill="#151C3B"/><rect x="280" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.69s"><rect x="283" y="145" width="12" height="12" fill="#151C3B"/><rect x="280" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.66s"><rect x="283" y="157" width="12" height="12" fill="#151C3B"/><rect x="280" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.63s"><rect x="283" y="169" width="12" height="12" fill="#151C3B"/><rect x="280" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.60s"><rect x="283" y="181" width="12" height="12" fill="#151C3B"/><rect x="280" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.59s"><rect x="295" y="193" width="12" height="12" fill="#151C3B"/><rect x="292" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.61s"><rect x="307" y="193" width="12" height="12" fill="#151C3B"/><rect x="304" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.63s"><rect x="319" y="193" width="12" height="12" fill="#151C3B"/><rect x="316" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.65s"><rect x="331" y="193" width="12" height="12" fill="#151C3B"/><rect x="328" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.88s"><rect x="367" y="121" width="12" height="12" fill="#151C3B"/><rect x="364" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.90s"><rect x="379" y="121" width="12" height="12" fill="#151C3B"/><rect x="376" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.92s"><rect x="391" y="121" width="12" height="12" fill="#151C3B"/><rect x="388" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.83s"><rect x="355" y="133" width="12" height="12" fill="#151C3B"/><rect x="352" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.90s"><rect x="403" y="133" width="12" height="12" fill="#151C3B"/><rect x="400" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.80s"><rect x="355" y="145" width="12" height="12" fill="#151C3B"/><rect x="352" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.87s"><rect x="403" y="145" width="12" height="12" fill="#151C3B"/><rect x="400" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.77s"><rect x="355" y="157" width="12" height="12" fill="#151C3B"/><rect x="352" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.84s"><rect x="403" y="157" width="12" height="12" fill="#151C3B"/><rect x="400" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.74s"><rect x="355" y="169" width="12" height="12" fill="#151C3B"/><rect x="352" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.81s"><rect x="403" y="169" width="12" height="12" fill="#151C3B"/><rect x="400" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.71s"><rect x="355" y="181" width="12" height="12" fill="#151C3B"/><rect x="352" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.78s"><rect x="403" y="181" width="12" height="12" fill="#151C3B"/><rect x="400" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.70s"><rect x="367" y="193" width="12" height="12" fill="#151C3B"/><rect x="364" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.72s"><rect x="379" y="193" width="12" height="12" fill="#151C3B"/><rect x="376" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.74s"><rect x="391" y="193" width="12" height="12" fill="#151C3B"/><rect x="388" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.97s"><rect x="427" y="121" width="12" height="12" fill="#151C3B"/><rect x="424" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.99s"><rect x="439" y="121" width="12" height="12" fill="#151C3B"/><rect x="436" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.01s"><rect x="451" y="121" width="12" height="12" fill="#151C3B"/><rect x="448" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.02s"><rect x="463" y="121" width="12" height="12" fill="#151C3B"/><rect x="460" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.94s"><rect x="427" y="133" width="12" height="12" fill="#151C3B"/><rect x="424" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.01s"><rect x="475" y="133" width="12" height="12" fill="#151C3B"/><rect x="472" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.91s"><rect x="427" y="145" width="12" height="12" fill="#151C3B"/><rect x="424" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.98s"><rect x="475" y="145" width="12" height="12" fill="#151C3B"/><rect x="472" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.88s"><rect x="427" y="157" width="12" height="12" fill="#151C3B"/><rect x="424" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.95s"><rect x="475" y="157" width="12" height="12" fill="#151C3B"/><rect x="472" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.85s"><rect x="427" y="169" width="12" height="12" fill="#151C3B"/><rect x="424" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.92s"><rect x="475" y="169" width="12" height="12" fill="#151C3B"/><rect x="472" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.82s"><rect x="427" y="181" width="12" height="12" fill="#151C3B"/><rect x="424" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.89s"><rect x="475" y="181" width="12" height="12" fill="#151C3B"/><rect x="472" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.79s"><rect x="427" y="193" width="12" height="12" fill="#151C3B"/><rect x="424" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.81s"><rect x="439" y="193" width="12" height="12" fill="#151C3B"/><rect x="436" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.83s"><rect x="451" y="193" width="12" height="12" fill="#151C3B"/><rect x="448" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.84s"><rect x="463" y="193" width="12" height="12" fill="#151C3B"/><rect x="460" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.08s"><rect x="499" y="121" width="12" height="12" fill="#151C3B"/><rect x="496" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.10s"><rect x="511" y="121" width="12" height="12" fill="#151C3B"/><rect x="508" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.11s"><rect x="523" y="121" width="12" height="12" fill="#151C3B"/><rect x="520" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.13s"><rect x="535" y="121" width="12" height="12" fill="#151C3B"/><rect x="532" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.15s"><rect x="547" y="121" width="12" height="12" fill="#151C3B"/><rect x="544" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.05s"><rect x="499" y="133" width="12" height="12" fill="#151C3B"/><rect x="496" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.02s"><rect x="499" y="145" width="12" height="12" fill="#151C3B"/><rect x="496" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.99s"><rect x="499" y="157" width="12" height="12" fill="#151C3B"/><rect x="496" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.01s"><rect x="511" y="157" width="12" height="12" fill="#151C3B"/><rect x="508" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.02s"><rect x="523" y="157" width="12" height="12" fill="#151C3B"/><rect x="520" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.04s"><rect x="535" y="157" width="12" height="12" fill="#151C3B"/><rect x="532" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.96s"><rect x="499" y="169" width="12" height="12" fill="#151C3B"/><rect x="496" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.93s"><rect x="499" y="181" width="12" height="12" fill="#151C3B"/><rect x="496" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.90s"><rect x="499" y="193" width="12" height="12" fill="#151C3B"/><rect x="496" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.92s"><rect x="511" y="193" width="12" height="12" fill="#151C3B"/><rect x="508" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.93s"><rect x="523" y="193" width="12" height="12" fill="#151C3B"/><rect x="520" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.95s"><rect x="535" y="193" width="12" height="12" fill="#151C3B"/><rect x="532" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:0.97s"><rect x="547" y="193" width="12" height="12" fill="#151C3B"/><rect x="544" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.19s"><rect x="571" y="121" width="12" height="12" fill="#151C3B"/><rect x="568" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.26s"><rect x="619" y="121" width="12" height="12" fill="#151C3B"/><rect x="616" y="118" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.16s"><rect x="571" y="133" width="12" height="12" fill="#151C3B"/><rect x="568" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.23s"><rect x="619" y="133" width="12" height="12" fill="#151C3B"/><rect x="616" y="130" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.14s"><rect x="583" y="145" width="12" height="12" fill="#151C3B"/><rect x="580" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.18s"><rect x="607" y="145" width="12" height="12" fill="#151C3B"/><rect x="604" y="142" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.13s"><rect x="595" y="157" width="12" height="12" fill="#151C3B"/><rect x="592" y="154" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.08s"><rect x="583" y="169" width="12" height="12" fill="#151C3B"/><rect x="580" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.12s"><rect x="607" y="169" width="12" height="12" fill="#151C3B"/><rect x="604" y="166" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.04s"><rect x="571" y="181" width="12" height="12" fill="#151C3B"/><rect x="568" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.11s"><rect x="619" y="181" width="12" height="12" fill="#151C3B"/><rect x="616" y="178" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.01s"><rect x="571" y="193" width="12" height="12" fill="#151C3B"/><rect x="568" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="c" style="animation-delay:1.08s"><rect x="619" y="193" width="12" height="12" fill="#151C3B"/><rect x="616" y="190" width="11" height="11" fill="#F3EBCB"/></g>
+<g class="say"><text class="tx" x="64" y="262">I build things that guard, help and teach.</text>
+<text class="tx2" x="64" y="298">Security tools for the Mac, an AI teammate for Minecraft,</text><text class="tx2" x="64" y="324">and trainers I wrote to practise for exams.</text></g>
 </svg>
