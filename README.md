@@ -7,11 +7,18 @@
 <br/>
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-20232a?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![TypeScript](https://img.shields.io/badge/TypeScript-20232a?style=for-the-badge&logo=typescript&logoColor=3178C6)
 ![Node.js](https://img.shields.io/badge/Node.js-20232a?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E)
 ![Python](https://img.shields.io/badge/Python-20232a?style=for-the-badge&logo=python&logoColor=3776AB)
 ![Java](https://img.shields.io/badge/Java-20232a?style=for-the-badge&logo=openjdk&logoColor=ED8B00)
 ![Swift](https://img.shields.io/badge/Swift-20232a?style=for-the-badge&logo=swift&logoColor=F05138)
 ![Shell](https://img.shields.io/badge/Shell-20232a?style=for-the-badge&logo=gnubash&logoColor=4EAA25)
+
+<br/><br/>
+
+| 📦 14 | 🧑‍💻 7 | 🧭 4 |
+| :---: | :---: | :---: |
+| projects built | languages used | areas: AI bots · learning · business · Mac tools |
 
 </div>
 
@@ -33,17 +40,38 @@ An AI teammate that joins your own world, talks out loud, walks with you and rem
 - 🔧 **Deep fixes, not workarounds** — found the cause of a movement kick with a custom server probe; repaired a broken mod by patching its bytecode
 - 🔒 **Safe by default** — code execution off, chat commands only from an allow list
 
-## 🧰 More things I've built
+## 🎓 Learning tools
+
+| Project | What it does |
+| --- | --- |
+| 📚 **E1-Prüfungstrainer** | A complete local learning system for a school entrance exam in German, English and maths — no account, no server, all data stays in the browser |
+| 🧪 **Exam Trainer (Maths & Science)** | Practice system in English for an international school entrance test, built with TypeScript and Vite, with its own test suite |
+| ➗ **Mathe-Trainer** | A single-file maths trainer that runs in any browser, fully offline |
+
+## 📈 Business & automation
+
+| Project | What it does |
+| --- | --- |
+| 🏭 **Auftragsmaschine 2.0** | Local system for solo freelancers: finds local businesses, audits their websites for provable flaws, and produces the analysis document, call guide and print-ready letter — plus the pipeline maths behind a revenue goal |
+| 📡 **Verschenk-Radar** | Watches free-item listings, flags things worth picking up and prepares message drafts — a human always sends them |
+| 🗂️ **Screenshot Sorter** | Sorts screenshots into topic folders by year and month and keeps a searchable catalogue |
+
+## 🍏 Mac tools
+
+| Project | What it does |
+| --- | --- |
+| 🔇 **Vorssaint-Stumm** | A small Swift tool on CoreAudio that truly mutes the speakers when the volume reaches zero — fixes a gap where they kept playing at −63.5 dB |
+| 🌐 **Netz-Check** | Measures protection and speed of an internet connection and writes an HTML report |
+| 🖥️ **Old-MacBook Remote Kit** | Turns an old MacBook into a remotely controlled helper, with firewall rules, a watchdog, a fan monitor and a kill switch |
+
+## ⛏️ More Minecraft engineering
 
 | Project | What it does |
 | --- | --- |
 | 🏰 **Minecraft Festung** | Fortresses built by datapack: a 41×41 TNT-proof base with a lock, and a mountain castle on a 192×192 platform — every part checked block by block |
 | ✨ **Enchant-Bot** | A Mineflayer bot that joins as its own player and enchants your gear on request in chat |
+| 🎒 **Gearkit** | A generator for a datapack that hands out 29 shulker boxes of fully enchanted gear, for two game-version ranges |
 | 🗺️ **Unstable Maps Lab** | Tooling to analyse and test Minecraft maps across game versions, with its own test server and client |
-| 📈 **Auftragsmaschine 2.0** | Local system for solo freelancers: finds local businesses, audits their websites, and produces the analysis, call guide and letter |
-| 📡 **Verschenk-Radar** | Watches free-item listings and prepares message drafts — a human always sends them |
-| 🌐 **Netz-Check** | Measures protection and speed of an internet connection and writes an HTML report |
-| ➗ **Mathe-Trainer** | A single-page maths trainer that runs in the browser |
 
 <sub>Most repositories are private while they are in development.</sub>
 
