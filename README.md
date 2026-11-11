@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0f2027,50:203a43,100:2c5364&text=BenCodeX&fontColor=ffffff&fontSize=64&fontAlignY=38&desc=AI%20teammates%20%C2%B7%20security%20tooling%20%C2%B7%20automation&descAlignY=60&descSize=18" alt="BenCodeX" width="100%" />
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=2C9FB8&center=true&vCenter=true&width=720&lines=I+build+AI+teammates+and+security+tooling.;Protection+that+watches+itself+%E2%80%94+every+10+seconds.;Tested+end+to+end+with+a+real+game+client.;Safe+by+default.+Documented.+Honest+credit." alt="I build AI teammates for Minecraft." />
+<img src="assets/header.svg" alt="BenCodeX — security tooling, AI teammates, automation" width="100%" />
 
 <br/>
 
@@ -16,7 +14,7 @@
 
 <br/><br/>
 
-| 📦 17 | 🧑‍💻 7 | 🧭 5 |
+| 📦 16 | 🧑‍💻 7 | 🧭 5 |
 | :---: | :---: | :---: |
 | projects built | languages used | areas: security · AI bots · learning · business · Mac tools |
 
@@ -28,19 +26,18 @@ Protection that is checked, can be rolled back and watches itself.
 
 <div align="center">
 
-| 🌐 2.4 M | ⏱️ 10 s | 🚫 ~305,000 | 🔁 3 |
-| :---: | :---: | :---: | :---: |
-| domains blocked by the DNS filter | watchdog check interval | tracker domains on the blocklist | scripts that belong together: apply · audit · roll back |
+| 🌐 2.4 M | 🚫 ~305,000 | 🔁 3 |
+| :---: | :---: | :---: |
+| domains blocked by the DNS filter | tracker domains on the blocklist | scripts that belong together: apply · audit · roll back |
 
 </div>
 
 | Project | What it does |
 | --- | --- |
 | 🔐 **Mac Hardening Suite** | Three scripts that belong together: one applies the hardening step by step, one audits every point read-only (OK or missing), one rolls changes back |
-| 🧱 **DNS Filter** | A local, encrypted DNS filter for 2.4 million blocked domains — ads, trackers and malware — with its own guard, and it keeps filtering while a VPN is active |
-| 👁️ **Schutzwache** | A watchdog that starts with the system, before login: checks the security services every 10 seconds, restarts anything that failed and reports the rest |
+| 🧱 **DNS Filter** | A local, encrypted DNS filter for 2.4 million blocked domains — ads, trackers and malware — with its own guard |
+| 👁️ **Schutzwache** | A watchdog for security services: notices when one stops, restarts it and reports |
 | 🚫 **Tracker Blocklist** | Builds the largest tracker, ad and malware blocklist the system can handle, in selectable levels |
-| 🖥️ **Old-MacBook Remote Kit** | Runs an old MacBook as a remotely controlled helper behind firewall rules, with a watchdog, a blocklist and a kill switch |
 | 📶 **Netz-Check** | Measures the protection and speed of an internet connection and writes an HTML report |
 | 🤖 **AI safety in Paul** | The AI teammate cannot run code, and may only use chat commands from an allow list — destructive ones are blocked |
 
@@ -112,6 +109,6 @@ An AI teammate that joins your own world, talks out loud, walks with you and rem
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:2c5364,50:203a43,100:0f2027&section=footer" alt="" width="100%" />
+<img src="assets/footer.svg" alt="" width="100%" />
 
 </div>
