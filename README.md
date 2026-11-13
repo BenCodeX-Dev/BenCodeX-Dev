@@ -1,10 +1,10 @@
 <img src="assets/header.svg" alt="BenCodeX. I build things that guard, help and teach." width="100%" />
 
-I write software on a Mac, and almost all of it runs locally: no account, no server, nothing that phones home. Most of the repositories are private while I work on them, so this page is the tour.
+I write software on a Mac, and almost all of it runs on your own machine. There is no cloud account to sign up for and no server of mine in the middle. Most of the repositories are private while I work on them, so this page is the tour.
 
 ## Things that guard
 
-**Mac Hardening Suite.** Three scripts that belong together. The first applies the hardening step by step, the second checks every point without changing anything, the third rolls it all back.
+**Mac Hardening Suite.** Three scripts that belong together. The first applies the hardening step by step, the second checks every point without changing anything, the third takes back the parts that can be taken back, one at a time or all together.
 
 **DNS Filter.** A local, encrypted DNS filter that blocks 2.4 million ad, tracker and malware domains.
 
@@ -14,9 +14,9 @@ I write software on a Mac, and almost all of it runs locally: no account, no ser
 
 **Netz-Check.** Measures how well protected and how fast an internet connection is, and writes the result as a report you can open in the browser.
 
-All of it is plain shell. There is nothing to install, and every line can be read before it runs. Netz-Check adds a little JavaScript and is wrapped as a small Mac app.
+All of it is shell scripts, with a few lines of Perl and Python inside, and every line can be read before it runs. The DNS filter and the hardening script fetch a few open-source tools through Homebrew. Everything else is already on a Mac. Netz-Check adds a little JavaScript and is wrapped as a small Mac app.
 
-The rule behind all of them: check before and after, and never change something I cannot undo.
+The rule behind all of them: check before and after, and keep a way back wherever there is one.
 
 ## Paul
 
@@ -26,17 +26,17 @@ Paul is an AI teammate for Minecraft. He joins your own world, talks out loud, w
 
 His first answers took thirteen seconds. Now they take two to four. He knows 76 world guides and runs on three Minecraft versions.
 
-Under the hood he runs on Node.js 22. A small Fabric macro adds the `.paul` commands inside the game and opens the world to LAN. ViaProxy bridges the game versions. My changes to the projects he is built on live as patches in their own folder, so an update upstream never overwrites them. One script starts him, stops him and reports his status.
+Under the hood he runs on Node.js 22. A small Fabric macro adds the `.paul` commands inside the game and opens the world to LAN. My changes to the projects he is built on live as patches in their own folder, so an update upstream never overwrites them. One script starts him, stops him and reports his status.
 
-There are two levels of tests. A smoke test gives a quick answer. The end-to-end run uses a real game client: it types the command, Paul joins, answers, walks and leaves.
+There are two levels of tests. A smoke test gives a quick answer: a plain bot joins through ViaProxy. The end-to-end run uses a real game client: it types the command, Paul joins, answers, walks and leaves.
 
 He is also the project where I learned the most. A kick that kept throwing him out of the game only made sense after I wrote my own server probe to watch his movement. A broken mod got fixed by patching its bytecode.
 
-Paul cannot run code on your machine, and the only chat commands he may use are on an allow list. He is built on [Mindcraft](https://github.com/mindcraft-bots/mindcraft), [Mineflayer](https://github.com/PrismarineJS/mineflayer) and [ViaProxy](https://github.com/ViaVersion/ViaProxy).
+Paul cannot run code on your machine, and the only chat commands he may use are on an allow list. He is built on [Mindcraft](https://github.com/mindcraft-bots/mindcraft) and [Mineflayer](https://github.com/PrismarineJS/mineflayer), and the smoke test uses [ViaProxy](https://github.com/ViaVersion/ViaProxy).
 
 ## Things that teach
 
-**E1-Prüfungstrainer.** A learning system for a school entrance exam in German, English and maths. Everything stays in the browser. React and TypeScript, built with Vite, tested with Vitest. A build script folds the finished trainer into one HTML file that opens with a double click, without a server and without internet. 151 tests run on their own; a few more need the local server.
+**E1-Prüfungstrainer.** A learning system for a school entrance exam in German, English and maths. Answers and progress stay on your own computer. React and TypeScript, built with Vite, tested with Vitest. A build script folds the finished trainer into one HTML file that opens with a double click, without a server and without internet. The full version adds local accounts and an optional AI tutor, which only works with a key of your own. 151 tests run on their own; a few more need the local server.
 
 **Exam Trainer.** The same idea in English for maths and science, on the same stack: React, TypeScript, Vite and Vitest, with the type check as its own step. 773 tests, all passing.
 
@@ -68,7 +68,7 @@ Tests run before I call something done. Where a unit test cannot prove it, a rea
 
 I keep dependencies few. If the language already ships a database or a test runner, I use that one.
 
-Changes to other people's code stay in patch files next to my own, never mixed in. Anything that changes a system gets a way back.
+Changes to other people's code stay in patch files next to my own, never mixed in. Where a change to a system can be undone, there is a script that undoes it.
 
 No passwords or keys in a repository. Risky features stay off until I switch them on.
 
