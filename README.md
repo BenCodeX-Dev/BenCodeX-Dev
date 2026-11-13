@@ -48,7 +48,7 @@ Paul cannot run code on your machine, and the only chat commands he may use are 
 
 **Verschenk-Radar.** Watches listings for free items, points out the ones worth picking up and drafts a message. A person always sends it.
 
-**Vorssaint-Stumm.** A small Swift tool that truly mutes the speakers at volume zero. Without it they kept playing at −63.5 dB. 123 lines on CoreAudio, built with one script.
+**[Vorssaint-Stumm](https://github.com/BenCodeX-Dev/vorssaint-stumm).** A small Swift tool that truly mutes the speakers at volume zero. Without it they kept playing at −63.5 dB. 123 lines on CoreAudio, built with one script. This one is public, so you can read every line.
 
 **Screenshot Sorter.** Files screenshots into folders by topic, year and month, and keeps a catalogue you can search.
 
