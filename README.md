@@ -56,7 +56,7 @@ Paul cannot run code on your machine, and the only chat commands he may use are 
 
 **Enchant-Bot.** Joins as its own player and enchants your gear when you ask in chat.
 
-**Gearkit.** Generates a datapack that hands out 29 shulker boxes of fully enchanted gear, from one Python generator for two ranges of game versions.
+**[Gearkit](https://github.com/BenCodeX-Dev/gearkit).** Generates a datapack that hands out 29 shulker boxes of fully enchanted gear, from one Python generator for two ranges of game versions. Public as well, generator and output.
 
 **Unstable Maps Lab.** Tools to analyse and test Minecraft maps across game versions.
 
