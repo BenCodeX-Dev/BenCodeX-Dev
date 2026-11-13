@@ -22,6 +22,8 @@ The rule behind all of them: check before and after, and never change something 
 
 Paul is an AI teammate for Minecraft. He joins your own world, talks out loud, walks with you and keeps a separate memory for every world, so he never mixes up places.
 
+<img src="assets/paul.svg" alt="Paul and his four in-game commands: .paul an, .paul aus, .paul stil and .paul status." width="100%" />
+
 His first answers took thirteen seconds. Now they take two to four. He knows 76 world guides and runs on three Minecraft versions.
 
 Under the hood he runs on Node.js 22. A small Fabric macro adds the `.paul` commands inside the game and opens the world to LAN. ViaProxy bridges the game versions. My changes to the projects he is built on live as patches in their own folder, so an update upstream never overwrites them. One script starts him, stops him and reports his status.
@@ -34,9 +36,9 @@ Paul cannot run code on your machine, and the only chat commands he may use are 
 
 ## Things that teach
 
-**E1-Prüfungstrainer.** A learning system for a school entrance exam in German, English and maths. Everything stays in the browser. React and TypeScript, built with Vite, tested with Vitest. A build script folds the finished trainer into one HTML file that opens with a double click, without a server and without internet.
+**E1-Prüfungstrainer.** A learning system for a school entrance exam in German, English and maths. Everything stays in the browser. React and TypeScript, built with Vite, tested with Vitest. A build script folds the finished trainer into one HTML file that opens with a double click, without a server and without internet. 151 tests run on their own; a few more need the local server.
 
-**Exam Trainer.** The same idea in English for maths and science, on the same stack: React, TypeScript, Vite and Vitest, with the type check as its own step.
+**Exam Trainer.** The same idea in English for maths and science, on the same stack: React, TypeScript, Vite and Vitest, with the type check as its own step. 773 tests, all passing.
 
 **Mathe-Trainer.** A maths trainer in a single file. Open it in any browser, online or not.
 
@@ -73,3 +75,7 @@ No passwords or keys in a repository. Risky features stay off until I switch the
 When I find the cause of a bug I write it down, along with what I decided and what is still open.
 
 I mostly work in JavaScript and TypeScript on Node.js, Python for generators, shell for the Mac, and Swift or Java when the job needs it.
+
+## Reaching me
+
+Open an issue on this repository. That is the one place I answer questions about anything on this page.
