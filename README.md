@@ -79,3 +79,5 @@ I mostly work in JavaScript and TypeScript on Node.js, Python for generators, sh
 ## Reaching me
 
 Open an issue on this repository. That is the one place I answer questions about anything on this page.
+
+You can also find me on [Modrinth](https://modrinth.com/user/BenCodeX-Dev) and on [dev.to](https://dev.to/bencodexdev). Both are new, so there is not much to see there yet.
